@@ -1,0 +1,111 @@
+*{box-sizing: border-box;};
+body{scroll-behavior: smooth;}
+html{scroll-behavior: smooth;}
+
+/*custom scrollbar.........................................*/
+::-webkit-scrollbar{width: 4px;}
+::-webkit-scrollbar-button{height: 0}
+::-webkit-scrollbar-thumb{background:linear-gradient(red,purple);border-radius: 30px;}
+::-webkit-scrollbar-track{background: linear-gradient(#777,#ccc);}
+/*custom scrollbar ends.........................................*/
+
+
+
+.nav-wrapper ul li:hover{background:rgb(27, 27, 48);color: #f1f1f1;transition: all 0.3s linear;padding:2ex;}
+.nav-wrapper ul li:hover a{color: #f1f1f1;text-decoration: none;}
+nav{background:rgb(27, 27, 48)}
+.brand-logo{animation: textt 0.4s infinite,moves 2s infinite alternate;font-weight: 700;}
+.brand-logo:hover{text-decoration: none;background:rgb(27, 27, 48);color: #f1f1f1;transition: all 0.3s linear;padding:2ex;}
+@media screen and (max-width:600px){
+    .brand-logo{font-size: 22px!important;animation: step-start;}
+}
+/*body.............................................................................*/
+.banner img{height: 400px;}
+.banner img{width: 100%;}
+
+/*about me........................*/
+.about-me{background: blue;color: #f1f1f1;padding: 6%;}
+.about-me .face{width: 40%;float: left;}
+.about-me .face img{border-radius: 50%;}
+.about-me .info{width: 60%;float: right;box-sizing: border-box;padding: 20px;}
+.about-me .info p{margin-bottom: 30px;}
+.clear{clear: both;}
+a.aboutbutton{color: #f1f1f1;text-decoration: none;}
+.aboutbutton:hover{transform: scale(1.2);padding: 15px 60px;transition: all 0.6s linear;}
+.about-me .info .aboutbutton{
+  padding: 15px 40px;
+  background: linear-gradient(red,purple);
+  color: #f1f1f1;
+  border-radius: 50px;
+  text-decoration: none;
+  border: 2px solid #ddd}
+
+@media screen and (max-width:600px){
+
+    .about-me{display: block;}
+    .about-me .face{width: 100%;text-align: center;float:none;}
+    .about-me .info{width: 100%;text-align: center;}
+}
+/**about me ends.................../
+
+
+
+/* footer...........................................................................*/
+footer{background: rgb(18, 12, 49);
+width: 100%;
+color: #f1f1f1;
+border-top: 2px solid #f1f1f1;
+overflow: hidden;}
+
+.footer-widget{overflow: hidden;}
+.footer-widget h2{font-size: 24px;border-bottom: 1px solid #ddd;padding: 15px 7px;
+
+    
+        
+        
+      animation: borders 0.4s infinite ,textt 0.6s infinite;
+      transition: all 0.6s linear;
+
+}
+@keyframes borders{
+    0%{border-bottom: 1px solid #ddd;}
+    20%{border-bottom: 1px solid rgb(133, 179, 80)}
+    40%{border-bottom: 1px solid rgb(96, 60, 196)}
+    60%{border-bottom: 1px solid rgb(245, 58, 58)}
+    80%{border-bottom: 1px solid rgb(218, 87, 174)}
+    100%{border-bottom: 1px solid rgb(93, 231, 224);}
+}
+
+@keyframes textt{
+    0%{color:  #ddd;}
+    20%{color: rgb(133, 179, 80)}
+    40%{color:  rgb(96, 60, 196)}
+    60%{color:  rgb(245, 58, 58)}
+    80%{color:  rgb(218, 87, 174)}
+    100%{color:  rgb(93, 231, 224);}
+}
+
+
+@keyframes moves{
+    0%{padding-left: 100px;}
+    100%{transform: translateX(20px);}
+}
+@keyframes movesfooter{
+    0%{padding-left: 60px;}
+    100%{transform: translateX(20px);}
+}
+
+
+
+
+.footer-widget ul{list-style: none;}
+.footer-widget ul li{padding: 5px;color: #f1f1f1;text-align: left;overflow: hidden;}
+.footer-widget ul li:hover{padding: 5px;color: #f1f1f1;text-align: left;}
+.footer-widget ul li:hover a{animation: movesfooter 0.4s,textt 0.4s;}
+.footer-widget ul li a{color: #aca1a1;text-decoration: none;}
+
+
+footer .footer-bottom{background: rgb(5, 5, 29);
+color: #f1f1f1;padding: 30px;text-align: center;}
+
+footer .footer-bottom>a{text-decoration: none;color: #9e9a9a;}
