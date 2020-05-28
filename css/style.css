@@ -1,5 +1,5 @@
 *{box-sizing: border-box;};
-body{scroll-behavior: smooth;}
+body{scroll-behavior: smooth;background:rgb(27, 27, 48); ;}
 html{scroll-behavior: smooth;}
 
 /*custom scrollbar.........................................*/
@@ -13,7 +13,10 @@ html{scroll-behavior: smooth;}
 
 .nav-wrapper ul li:hover{background:rgb(27, 27, 48);color: #f1f1f1;transition: all 0.3s linear;padding:2ex;}
 .nav-wrapper ul li:hover a{color: #f1f1f1;text-decoration: none;}
-nav{background:rgb(27, 27, 48)}
+nav{background:rgb(27, 27, 48);}
+@media screen and (min-width:600px){
+    nav{height: 80px;padding: 10px;}
+}
 .brand-logo{animation: textt 0.4s infinite,moves 2s infinite alternate;font-weight: 700;}
 .brand-logo:hover{text-decoration: none;background:rgb(27, 27, 48);color: #f1f1f1;transition: all 0.3s linear;padding:2ex;}
 @media screen and (max-width:600px){
@@ -39,6 +42,12 @@ a.aboutbutton{color: #f1f1f1;text-decoration: none;}
   border-radius: 50px;
   text-decoration: none;
   border: 2px solid #ddd}
+  /*-------sidebar mibile..........................*/
+  #slide-out{opacity: 1 !important;z-index: 554366827 !important;}
+  .navbar-fixed{overflow-x: hidden;
+overflow-y: auto;}
+    /*-------sidebar mibile..........................*/
+
 
 @media screen and (max-width:600px){
 
