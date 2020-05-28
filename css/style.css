@@ -29,8 +29,10 @@ nav{background:rgb(27, 27, 48);}
     background-image:url('https://images.pexels.com/photos/34125/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') ;
     margin: auto;
     padding:50px;
-    
-    color:#1BFFFF;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:rgb(226, 55, 161);
     text-align: center;
 }
 .banner h1{font-weight: 700;padding-top: 10%;
@@ -46,7 +48,7 @@ font-family:  'Vidaloka', serif;
     .banner h1{font-weight: 700;padding-top: 10%;font-size: 30px;}
 }
 /*about me........................*/
-.about-me{background: linear-gradient(#2E3192 , #1BFFFF);color: #f1f1f1;padding: 6%;}
+.about-me{background: linear-gradient(#2E3192 , #1BFFFF);color: #f1f1f1;padding: 6%;height: 100vh;}
 .about-me .face{width: 40%;float: left;}
 .about-me .face img{border-radius: 50%;}
 .about-me .info{width: 60%;float: right;box-sizing: border-box;padding: 20px;}

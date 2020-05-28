@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Ashish Kumar | full stack developer</title>
+  <title>contact us</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -11,9 +11,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="./css/page.css">
-<link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
 </head>
 <header>
      <div class="navbar-fixed">
@@ -25,7 +25,7 @@
           <ul class="right hide-on-med-and-down">
             <li><a href="/">Home</a></li>
             <li><a href="">Portfolio</a></li>
-            <li><a href="./services.html">Services</a></li>
+            <li><a href="">Services</a></li>
             <li><a href="./payment-terms.html">Payment Terms</a></li>
             <li><a href="./contact-us.html">Contact Us</a></li>
           </ul>
@@ -57,21 +57,82 @@
 
 <body>
   <!--banner-->
-  <div class="banner">
-    <h1 class="typing"></h1>
+  <div class="pagebanner">
+    <img src="./banner2-min.jpg">
   </div>
-    <!--banner ends-->
- <div class="about-me">
-   <div class="face">
-<img src="./images/ashish.jpg" class="z-depth-3" alt="Ashish Kumar | full stack developer" title="">
-   </div>
-   <div class="info">
-     <h2>About Me</h2>
-     <p>I am a Full stack Web Developer  in Delhi India. I live in Delhi and loves to…</p>
-     <a href="" class="aboutbutton">Read More</a>
-   </div>
-   <div class="clear"></div>
- </div>
+    <!--banner end-->
+    <div class="container-fluid">
+        <div class="row">
+            
+            <div class="col-md-5 col-sm-12 col-xs-12">
+                
+                <div class="contact">
+                    <h3> Quick Contact</h3>
+                    <!--form-->
+                    <form class="col s12 z-depth-2">
+                        <div class="row">
+                          <div class="input-field col s6">
+                            <input  id="name" type="text" class="validate">
+                            <label for="name"> Name</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="input-field col s12">
+                            <input  id="email" type="email" class="validate">
+                            <label for="email">email</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="input-field col s12">
+                            <input id="mobile" type="number" class="validate">
+                            <label for="mobile">mobile</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="input-field col s12">
+                            <textarea id="message" class="materialize-textarea"></textarea>
+                            <label for="message">message</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 text-center">
+                              <input type="submit" class="btn" value="send">
+                            </div>
+                          </div>
+                      </form>
+                    <!--form end-->
+                </div>
+            </div>
+            <div class="col-md-7 col-sm-12 col-xs-12">
+                <div class="content">
+                    <h3>Address</h3>
+                    <address>
+                        You can contact us at:<br>
+                        TechOnTheNet.com<br>
+                        123 Somewhere St.<br>
+                        City, State
+                      </address>
+                    
+                      <h3>contact info</h3>
+                      <address>
+                        <h6><b>name: </b>Ashish Kumar</h4>
+                        <h6><b>email: </b><a href="mailto:ashishbhu221306@gmail.com">ashishbhu221306@gmail.com</a></h6>
+                        <h6><b>skype: </b></h6>
+                    </address>
+
+                    <h3>Give Us a Call</h3>
+                    <h6><a href='tel:+917068513356'>+917068513356</a></h6>
+                </div>
+                  </div>
+                 
+        </div>
+        <div class="row">
+           <div class="col-md-12 col-sm-12 col-xs-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.4910600968483!2d77.30945221455849!3d28.58504169298082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce45f97fb7b77%3A0x57e50ec90fd80e55!2sNoida%20Sector-%2015!5e0!3m2!1sen!2sin!4v1590689055565!5m2!1sen!2sin" width="100%" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+           </div>
+        </div>
+
+    </div>
 
  
 <script>
@@ -80,16 +141,6 @@
   });
 </script>
 <script src="./js/footer.js"></script>
-<script src="./js/typed.min.js"></script>
-<script>
-  var typed1 = new Typed('.typing', {
-    strings: ["Professional Web Developer &amp; Freelancer in Delhi"],
-    typeSpeed: 80,
-    loop:true,
-    smartBackspace: true,
-    cursorChar: ''
-  });
-       </script>
 </body>
 <!--footer-->
 <footer>
