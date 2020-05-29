@@ -10,18 +10,13 @@ html{scroll-behavior: smooth;}
 /*custom scrollbar ends.........................................*/
 
 .nav-wrapper .social-network li a{font-weight: 600;font-size: 19px;}
-
-
 .nav-wrapper ul li:hover a{color: #f1f1f1;text-decoration: none;}
 nav{background:rgb(27, 27, 48);}
 @media screen and (min-width:600px){
     nav{height: 80px;padding: 10px;}
 }
-.brand-logo{animation: textt 0.4s infinite,moves 2s infinite alternate;font-weight: 700;font-family:  'Vidaloka', serif;}
-.brand-logo:hover{text-decoration: none;background:rgb(27, 27, 48);color: #f1f1f1;transition: all 0.3s linear;padding:2ex;}
-@media screen and (max-width:600px){
-    .brand-logo{font-size: 22px!important;animation: step-start;}
-}
+
+
 /*body.............................................................................*/
 
 .banner{
