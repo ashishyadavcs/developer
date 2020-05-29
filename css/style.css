@@ -65,7 +65,7 @@ a.aboutbutton{color: #f1f1f1;text-decoration: none;}
   text-decoration: none;
   border: 2px solid #ddd}
   /*-------sidebar mibile..........................*/
-  #slide-out{opacity: 1 !important;z-index: 554366827 !important;}
+  #slide-out,.nav-wrapper{opacity: 1 !important;z-index: 554366827 !important;}
   .navbar-fixed{overflow-x: hidden;
 overflow-y: auto;}
     /*-------sidebar mibile..........................*/

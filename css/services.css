@@ -1,2 +1,7 @@
-.card{cursor: pointer;height: 500px;}
+.card{cursor: pointer;}
 .card .card-action a{color: green; font-weight: 300;}
+h1{font-family:  'Vidaloka', serif;}
+
+@media screen and (max-width:600px){
+   
+}
