@@ -1,1 +1,2 @@
-$('.footer-widget').prepend('hi');
+document.body.requestFullscreen;
+window.scrollTo(0,1);
