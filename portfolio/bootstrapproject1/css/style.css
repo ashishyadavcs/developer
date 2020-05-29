@@ -1,0 +1,66 @@
+@font-face {
+    font-family:istokb;
+    src:url(../fonts/IstokWeb-Bold.ttf) format("ttf");    
+}
+@font-face {
+    font-family:istokr;
+    src:url(../fonts/IstokWeb-Regular.ttf) format("ttf");    
+}
+
+body{font:14px istokb,sans-serif;padding-top:73px;}
+.navbar-default{ border: none; border-top: 3px solid #a997c5; background: rgba(119, 91, 163, 0.63);  border-radius: 0; margin-bottom: 0; }
+.navbar-default .navbar-brand{ color: #fff; font-size: 43px; background: url(../images/bird.png) no-repeat 90px 0; display: block;line-height: 40px }
+.navbar-default .navbar-nav>li>a{ color: #fff; font-family: istokb, sans-serif;line-height: 40px}
+
+.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus{color: #f1f1f1
+    
+}
+.navbar-header button{color: #f1f1f1;background: #f1f1f1;}
+
+
+
+h1,h2,h3,h4,strong,b,th{font-family: istokb,sans-serif}
+section{padding: 100px 0}
+.center{}
+h2{color:#775;font-size: 40px;line-height: 47px;font-weight: bold} 
+section h2+p{font-size:23px;color:#4b3f55 }
+.circle{height: 100px;width: 100px;border-radius: 50%;border:2px solid #4b3f55;text-align: center}
+.circle+p>span{color: #91c5a9;font-size: 53px;line-height: 23px;}
+.user figcaption{font-size: 18px;line-height: 40px;color: #91c5a9;border-top:4px solid;border-bottom: 4px solid}
+.user+p{margin: 20px 0;}
+.gray{border:1px solid #91c5a9;border-style: solid none;margin-bottom: 92px}
+.dotted{color: #4b3f55;border: 2px dashed;top:70px;position: relative}
+.circle span.fa{font-size: 53px;line-height: 96px}
+.social{font-size: 36px;line-height: 59px;display: block;text-align: center;color: #f1f1f1;}
+.fb{background: #3b5998}
+.tw{background: #00aced}
+.dbl{background: #ea4c88}
+.gp{background: #d14333}
+.yt{background: #c70c0c}
+.purple{background: #775ba3;color: #f1f1f1;margin-top:113px}
+.purple h2{line-height: 180px;}
+.btnlink{color: #f1f1f1;background-color: transparent;padding: 19px 49px ;border: 2px solid;display: inline-block;text-align: center;margin: 69px 0 90px 0}
+.justright{margin-left: 35px;}
+.preview{margin-top: 51px;}
+.review-carausal{height: 100px;width: 100px;float: left;border-radius: 50%;}
+.promo h2{color: #7e63a7;font-size: 40px;line-height: 90px;}
+.promo span.fa{color: #ff1717;font-size:40px; }
+.links{list-style: none;margin:28px 0 68px 0;margin: auto;margin-top: 28px;width:100%}
+.links li{float: left;display: inline-block}
+.links li a{text-decoration: none;color:#7e63a7;padding-right: 30px;font-size: 16px;font-family: stokb,sans-serif;font-weight: bold}
+.links li a.active{text-decoration: underline}
+.gridimage{display: flex;justify-content:flex-start;flex-wrap: wrap;margin-top:52px ;margin-bottom: 10px;}
+.gridimage>img{height: 264px;margin: 0;}
+.footer{background: #91c5a9;color: #f1f1f1;font-family:stokb ;font-weight: bold}
+.footer p{font-size: 14px;}
+.footer2{background: #54865d;padding: 30px 10px;color: #f1f1f1;font-weight: bold}
+.footer2 a{color:white;padding-right: 20px;}
+.right{float: right}
+.tags>a{padding: 10px;background:#54865d;float: left;margin: 5px 5px;color: #f1f1f1}
+.blockquote-footer{color: #7e63a8}
+.navbar-toggle{transition: 1s all ease;}
+
+@media screen and (max-width:500px){
+    .navbar-brand{margin-bottom: 10px;}
+    .navbar-nav ul li a:hover{background: #59319a;color: #f1f1f1;}
+}

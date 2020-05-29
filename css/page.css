@@ -6,3 +6,6 @@
 .contact h3{margin-top: 55px;}
 .content ul.feature{list-style: circle;color: #000;font-family:  'Vidaloka', serif;}
 .content ul.feature li{padding: 3px 2px;}
+@media screen and (max-width:600px){
+    iframe.map{height: 300px;}
+}

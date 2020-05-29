@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<meta name="mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <link rel="manifest" href="/manifest.json">
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="./css/page.css">
@@ -23,7 +24,23 @@
         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       
         <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Ashish Kumar</a>
+          <ul class="social-network social-circle">
+            <li><a href="https://social.msdn.microsoft.com/profile/bikesh%20srivastava/" target="_BLANK"
+                class="icoMprofile" title="Microsoft Profile"><i class="fa fa-windows"></i></a></li>
+            <li><a href="https://bikeshsrivastava.blogspot.com/" target="_BLANK" class="icoBlog"
+                title="Blog"><i class="fa fa-rss"></i></a></li>
+            <li><a href="https://www.facebook.com/Bikeshsrivastav" target="_BLANK" class="icoFacebook"
+                title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/Bikeshsrivastav" target="_BLANK" class="icoTwitter"
+                title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/bikeshsrivastava/" target="_BLANK"
+                class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCFGJpb4RVtHV6Bj41Xq7vRQ/videos?view_as=subscriber"
+                target="_BLANK" class="icoYoutube" title="YouTube"><i class="fa fa-youtube"></i></a>
+            </li>
+            <li><a href="https://github.com/Bikeshs" target="_BLANK" class="icoGithub" title="Github"><i
+                  class="fa fa-github"></i></a></li>
+          </ul>
           <ul class="right hide-on-med-and-down">
             <li><a href="/">Home</a></li>
             <li><a href="./portfolio.html">Portfolio</a></li>
@@ -50,7 +67,7 @@
      <li><a href="./contact-us.html">Contact Us</a></li>
    </ul>
    
-<!--desktopn nav-->
+
 
 
      </div>
@@ -77,14 +94,12 @@
  </div>
 
  
-<script>
-     $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-</script>
+
 <script src="./js/footer.js"></script>
 <script src="./js/typed.min.js"></script>
 <script>
+  
+
   var typed1 = new Typed('.typing', {
     strings: ["Professional Web Developer &amp; Freelancer in Delhi"],
     typeSpeed: 80,
@@ -92,7 +107,13 @@
     smartBackspace: true,
     cursorChar: ''
   });
+  
+
+  $(document).ready(function(){
+       $('.sidenav').sidenav();
+     });
        </script>
+     
 </body>
 <!--footer-->
 <footer>

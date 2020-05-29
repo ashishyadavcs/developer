@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Hillyourself</title>
+   <meta charset="UTF-8"/>
+  <meta name="description" content="Hillyourself | ASHISH KUMAR WEB DESIGN"/>
+  <meta name="keywords" content="ASHISH KUMAR WEB DESIGN,HILLYOURSELF,ASHISH FGIET,ASHISH KUMAR FGIET ,MAHANGIPUR"/>
+  <meta name="author" content="ASHISH KUMAR"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <style>
+     
+ 
+      
+       html {
+  font-family: "Lucida Sans", sans-serif;
+}
+       body{}
+
+       *{margin: 0; box-sizing: border-box}
+       a{text-decoration: none}
+       .wrap{}
+       .navbar{margin: auto;text-align: left}
+       .nav{background-color: #1d1010;width: 100%;margin: auto}
+       .navbar li{display: inline-block;padding: 10px;text-decoration: none;margin: auto}
+       .navbar li a{color:#f1f1f1;padding: 10px;margin: auto}
+       .navbar li a:hover{background-color: aqua;color: black;}
+       .navbar li a:active{color: green;}
+       .header{height: 100px; background-color: green;color: white;text-align: center;padding: 10px;}
+       .sidebar{width:20%;background-color: #f1f1f1;padding: 10px;float: left;}
+       .main{width:80%;padding: 10px;float: left;background-color: #f1f1f1;}
+       .footer{height: 100px;color:white;background-color: #171313;text-align: center;padding: 10px;}
+       .clear{clear: both;}
+       .container{}
+       .card{background-color: white;margin-bottom: 3px;
+           padding:20px;
+           margin-top:20px;
+      
+}
+       .drop:before{
+           content: '';
+           border: 5px solid;
+           display: inline-block;
+           border-color: red  transparent transparent;
+       }
+       .dropdown{background-color: #312f2f;border-top: 2px solid #bfb2b2;display: none;position: absolute;}
+       
+       .nav ul li:hover .dropdown{display: block;}
+      
+       .full-drop{left:0; width: 100%}   //if left not zero it taking space
+       .full-drop ul{float: left;margin: 10px;}
+       .full-drop ul h3{color: aliceblue}
+       .dropdown ul li{display: block}
+       .dropdown ul{float: left}
+       .image-blur{
+           background-image: url(ashish.jpg);
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-position: center;
+           height: 100%;
+           
+       }
+       .text-blur h2{font-size:25px;
+       }
+       .text-blur{
+           position: absolute;
+           top:50%;
+           
+           padding: 20px;
+           
+       }
+       .text-blur{
+           background-color: :rgb(0,0,0);
+           background-color: :rgb(0,0,0,0.4);
+           color: white;
+           font-weight: bold;
+           
+           
+       }
+       .sidenav a:first-child{border-bottom: none;}
+.sidenav a {
+    color: #f1f1f1;
+    margin-left: 20px;
+    border-bottom: 1px solid #222;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+}
+
+#res{display:none}
+.sidenav a:active{color: #b71391;}
+.sidenav a:hover {
+  color: #b71391;transition: 1s;transform:translateX(26px);
+}
+.sidenav a:first-child:hover{transform: none}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+       .sidenav {
+    opacity: 0.9;
+    
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.3s ease-in-out;
+  padding-top: 60px;
+}
+      
+       
+         @media only screen and (max-width: 600px) {
+             .sidebar,.main{width: 100%;float: none}
+             .nav{width: 100%;display: none}
+             
+             
+             .navbar li{width: 100%;
+             padding: 3px}
+            
+             .dropdown{}
+             
+             .navbar li a:hover,.navbar li a:active .dropdown{display: block;color: aqua;z-index: 99}
+             .navbar li a{text-decoration: none;}
+             .navbar li a:hover{background-color:#1d1010;color: white;padding:10px }
+             .navbar li{padding: 20px;text-decoration: underline;text-align: center}
+             .drop:before{display: none}
+             .dropdown li a{color: aqua}
+             
+             
+             .sidenav {padding-top: 15px;}
+  .sidenav a{font-size: 18px;}
+    #res{display: block;position: absolute;top:10px;right:10px;z-index:;color: #f1f1f1}
+    .navbar{display: none;}
+    
+}
+             
+             
+            
+}
+       
+       
+       
+    </style>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+</head>
+<body>
+<div class="wrap">
+  
+      <header class="header">
+       <h1>Hillyourself</h1>
+       <span id="res" style="font-size:30px;cursor:pointer" onclick="openNav()"> &#9776;</span>
+       <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="https://www.helloashish.tk/?page_id=633">About</a>
+  <a href="#">Services</a>
+  <a href="https://wa.me/+917068513356">Whatsapp</a>
+  <a href="ashishkumar.html">About</a>
+</div>
+
+
+
+  
+        
+    </header>
+      <nav id="mySidenav" class="nav">
+       <ul class="navbar">
+          
+           <li><a href="">home</a></li>
+           <li><a href="">about</a></li>
+           <li><a  class="drop" href="">sections</a>
+           <div class="dropdown ">
+               <ul>
+                   <li><a href="">section1</a></li>
+                   <li><a href="">section1</a></li>
+                   <li><a href="">section1</a></li>
+                   <li><a href="">section1</a></li>
+               </ul>
+           </div>
+           </li>
+           <li><a class="drop" href="">service</a>
+          <div class="dropdown full-drop">
+              <ul>
+                  <li><h3>menu1 design</h3></li>
+                  <li><a href="#">web design</a></li>
+                  <li><a href="#">web design</a></li>
+                  <li><a href="#">web design</a></li>
+                  <li><a href="#">web design</a></li>
+                  <li><a href="#">web design</a></li>
+              </ul>
+                <ul>
+                  <li><h3>menu2</h3></li>
+                  <li><a href="#">web design</a></li>
+                  <li><a href="#">web design</a></li>
+                  <li><a href="#">web design</a></li>
+                  <li><a href="#">web design</a></li>
+                  <li><a href="#">web design</a></li>
+              </ul>
+                <ul>
+                  <li><h3>menu3</h3></li>
+                  <li><a href="#">web design</a></li>
+                  <li><a href="#">web design</a></li>
+                  <li><a href="#">web design</a></li>
+                  <li><a href="#">web design</a></li>
+                  <li><a href="#">web design</a></li>
+              </ul>
+                <ul>
+                  <li><h3>menu4</h3></li>
+                  <li><a href="#">web design</a></li>
+                  <li><a href="#">web design</a></li>
+                  <li><a href="#">web design</a></li>
+                  <li><a href="#">web design</a></li>
+                  <li><a href="#">web design</a></li>
+              </ul>
+          </div>
+           </li>
+           <li><a href="">tutorial</a></li>
+       </ul>
+        
+    </nav>
+        <div>
+         <aside class="sidebar"> 
+         <div class="card">
+             <b><h3>about me:</h3></b>
+         <img src="ashish.jpg" alt="ashish" height="100%" width="100%">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam accusamus quidem quo minus, consequuntur accusantium. Consequuntur error officiis maxime iusto nesciunt laboriosam alias tempore, eius facere eaque, sequi consectetur eligendi!
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ipsa reprehenderit minima nobis laborum aliquid, alias repellendus ex asperiores excepturi. Quia dignissimos nisi, impedit repellat maxime earum illo numquam harum.
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, laborum necessitatibus repudiandae aut voluptatum alias, numquam velit minus ullam natus deleniti quam quae, neque dolorum repellat dolor mollitia aliquam officiis.
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error maxime culpa non impedit numquam distinctio dignissimos vel corporis molestiae est ullam ut fugiat, suscipit molestias. Nesciunt recusandae, omnis esse veniam.
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quos, voluptatum autem illum tenetur omnis laboriosam facilis. Ab modi officiis nihil laudantium, dolores eveniet aperiam, hic vel laborum, impedit ea!
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quasi voluptatem amet perspiciatis iure repudiandae pariatur beatae, nam ullam, cum adipisci numquam cumque suscipit quas consequatur temporibus natus hic nisi?
+         
+         </p>
+         </div>
+         
+         </aside>
+         
+          
+         <div class="main">
+         
+         
+         <div class="card">
+          <b><h3>description:</h3></b>
+          <img src="ashish.jpg" alt="ashish" height="100%" width="100%">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam accusamus quidem quo minus, consequuntur accusantium. Consequuntur error officiis maxime iusto nesciunt laboriosam alias tempore, eius facere eaque, sequi consectetur eligendi!</p>   
+         </div>
+         
+         <div class="card">
+              <b><h3>about:</h3></b>
+              <img src="ashish.jpg" alt="ashish" height="100%" width="100%">
+         <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae et aperiam ducimus quia, iste, culpa error doloremque eligendi a, laboriosam fuga architecto sint vitae rerum! Non voluptate alias praesentium, tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam accusamus quidem quo minus, consequuntur accusantium. Consequuntur error officiis maxime iusto nesciunt laboriosam alias tempore, eius facere eaque, sequi consectetur eligendi!
+         </p>
+         </div>
+         
+        
+          </div>
+    </div>
+          
+          
+         <div class="clear" role="presentation"></div>
+   
+      
+      
+      <footer class="footer">
+        <p>copyrights&copy;2019</p>
+          
+    </footer>
+</div>
+<script>
+    function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+     document.querySelector(".sidenav").onclick=function(){
+         document.querySelector("#mySidenav").style.width="0";
+     }
+    </script>
+</body>
+</html>
