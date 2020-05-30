@@ -1,0 +1,6 @@
+.aboutmedetails{
+    padding: 20px;
+}
+h1,h2,h3{font-family:  'Vidaloka', serif;}
+.skillslist{list-style: none;}
+.skillslist li{padding: 10px;display:block;text-align: left;}

@@ -3,17 +3,19 @@ body{scroll-behavior: smooth;background:rgb(27, 27, 48); ;}
 html{scroll-behavior: smooth;}
 
 /*custom scrollbar.........................................*/
-::-webkit-scrollbar{width: 4px;}
-::-webkit-scrollbar-button{height: 0}
-::-webkit-scrollbar-thumb{background:linear-gradient(red,purple);border-radius: 30px;}
-::-webkit-scrollbar-track{background: linear-gradient(#777,#ccc);}
+body::-webkit-scrollbar{width: 4px;}
+body::-webkit-scrollbar-button{height: 0}
+body::-webkit-scrollbar-thumb{background:linear-gradient(red,purple);border-radius: 30px;}
+body::-webkit-scrollbar-track{background: linear-gradient(#777,#ccc);}
 /*custom scrollbar ends.........................................*/
 
 .nav-wrapper .social-network li a{font-weight: 600;font-size: 19px;}
 .nav-wrapper ul li:hover a{color: #f1f1f1;text-decoration: none;}
+
 nav{background:rgb(27, 27, 48);}
 @media screen and (min-width:600px){
     nav{height: 80px;padding: 10px;}
+    
 }
 
 
@@ -41,6 +43,7 @@ font-family:  'Vidaloka', serif;
 @media screen and (max-width:600px){
     .banner{height:92vh;}
     .banner h1{font-weight: 700;padding-top: 10%;font-size: 30px;}
+    .nav-wrapper .social-network li a{font-weight: 500;font-size: 19px;padding:0 12px;}
 }
 /*about me........................*/
 .about-me{background: linear-gradient(#2E3192 , #1BFFFF);color: #f1f1f1;padding:6%;height: 100vh;}
