@@ -16,6 +16,11 @@ body::-webkit-scrollbar-track{background: linear-gradient(#777,#ccc);}
 nav{background:rgb(27, 27, 48);}
 @media screen and (min-width:600px){
     nav{height: 80px;padding: 10px;}
+    /*sidenav pic user pic*/
+    .sidenav .user-view .circle {
+        height: 90px !important;
+        width: 90px !important;
+    }
     
 }
 
