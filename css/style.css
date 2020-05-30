@@ -11,7 +11,8 @@ body::-webkit-scrollbar-track{background: linear-gradient(#777,#ccc);}
 
 .nav-wrapper .social-network li a{font-weight: 600;font-size: 19px;}
 .nav-wrapper ul li:hover a{color: #f1f1f1;text-decoration: none;}
-
+.sidenav a{text-decoration: none;}
+.sidenav ul li{background: #000;color: #f1f1f1;}
 nav{background:rgb(27, 27, 48);}
 @media screen and (min-width:600px){
     nav{height: 80px;padding: 10px;}
