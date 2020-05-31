@@ -20,6 +20,9 @@ $routeProvider
    })
    .when('/contact-us', {
     templateUrl: 'contact-us.html',
+   })
+   .when('/aboutme', {
+    templateUrl: 'aboutme.html',
     
    })
 .otherwise({

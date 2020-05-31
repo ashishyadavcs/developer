@@ -16,67 +16,7 @@
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="./css/page.css">
 <link rel="stylesheet" href="./css/aboutme.css">
-
-
 </head>
-<header>
-    <div class="navbar-fixed">
-     <nav class="black"> 
-       <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-     
-       <div class="nav-wrapper">
-         <ul class="social-network social-circle">
-           <li><a href="https://social.msdn.microsoft.com/profile/ashish221306/" target="_BLANK"
-               class="icoMprofile" title="Microsoft Profile"><i class="fa fa-windows"></i></a></li>
-           <li><a href="http://ashishtech-solution.xyz" target="_BLANK" class="icoBlog"
-               title="Blog"><i class="fa fa-rss"></i></a></li>
-           <li><a href="https://www.facebook.com/ashish.15101997" target="_BLANK" class="icoFacebook"
-               title="Facebook"><i class="fa fa-facebook"></i></a></li>
-           <li><a href="https://twitter.com/ashishfgiet" target="_BLANK" class="icoTwitter"
-               title="Twitter"><i class="fa fa-twitter"></i></a></li>
-           <li><a href="https://www.linkedin.com/in/ashishfgiet/" target="_BLANK"
-               class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-           <li><a href="https://www.youtube.com/channel/UCFGJpb4RVtHV6Bj41Xq7vRQ/videos?view_as=subscriber"
-               target="_BLANK" class="icoYoutube" title="YouTube"><i class="fa fa-youtube"></i></a>
-           </li>
-           <li><a href="https://github.com/ashish221306" target="_BLANK" class="icoGithub" title="Github"><i
-                 class="fa fa-github"></i></a></li>
-         </ul>
-         <ul class="right hide-on-med-and-down">
-           <li><a href="./index.html">Home</a></li>
-           <li><a href="./portfolio.html">Portfolio</a></li>
-           <li><a href="./services.html">Services</a></li>
-           <li><a href="./payment-terms.html">Payment Terms</a></li>
-           <li><a href="./contact-us.html">Contact Us</a></li>
-         </ul>
-       </div>
-     </nav>
-
- 
-  
-
-
-
-    </div>
-    <ul id="slide-out" class="sidenav" >
-     <li><div class="user-view">
-       <div class="background">
-         <img src="images/earphone-min.jpg">
-       </div>
-       <a href="#user"><img class="circle" src="./images/ashish.jpg"></a>
-       <a href="./aboutme.html#aboutme"><span class="white-text name">Ashish Kumar</span></a>
-       <a href="mailto:asishbhu221306@gmail.com"><span class="white-text email">ashishbhu221306@gmail.com</span></a>
-     </div></li>
-     <li><a href="./index.html">Home</a></li>
-     <li><a href="./portfolio.html">Portfolio</a></li>
-     <li><a href="./services.html">Services</a></li>
-     <li><a href="./payment-terms.html">Payment Terms</a></li>
-     <li><a href="./contact-us.html">Contact Us</a></li>
-   </ul>
- 
-</header>
-
-
 <body>
   <!--banner-->
   <div class="pagebanner">
@@ -100,63 +40,231 @@
            </section>
            <section class="skills">
             <h2 class="text-center">Technical Skills &amp; Abilities</h2>
-            <hr>
-               <div class="row">
-                   <!--skills lists-->
-                   <div class="col-md-3">
-                    
-                    <ul class="skillslist">
-                        <h3>Frontend Development</h3>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>JAVASCRIPT</li>
-                      <li>JQUERY</li>
-                      <li>BOOTSTRAP</li>
-                      <li>ANGULAR</li>
-                    </ul>
-                   </div>
-                   <!--skills lists end-->
+            <!--tabs-->
+            <!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Frontend Development</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">Backend Development</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Database</button>
+    <button class="tablinks" onclick="openCity(event, 'Japan')">Framework</button>
+    <button class="tablinks" onclick="openCity(event, 'Interests')">Interests</button>
+    <button class="tablinks" onclick="openCity(event, 'Management')">Management</button>
+  </div>
+  
+  <!-- Tab content -->
+  <div id="London" class="tabcontent" >
+    <h3>Frontend Development</h3>
+    <div class="row">
+        <div class="col-sm-3">
+        <div class="thumbnail">
+            <img src="./images/skills/html.png">
+            <h4>HTML</h4>
+        </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="thumbnail">
+                <img src="./images/skills/css.png">
+                <h4>CSS</h4>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="thumbnail">
+                <img src="./images/skills/js.png">
+                <h4>JAVASCRIPT</h4>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="thumbnail">
+                <img src="./images/skills/jquery.png">
+                <h4>JQUERY</h4>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="thumbnail">
+                <img src="./images/skills/bootstrap.png">
+                <h4>BOOTSTRAP</h4>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="thumbnail">
+                <img src="./images/skills/angular.png">
+                <h4>ANGULAR</h4>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="thumbnail skilldiv">
+                <img src="./images/skills/photoshop.png">
+                <h4>PHOTOSHOP</h4>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="thumbnail skilldiv">
+                <img src="./images/skills/res.jpg">
+                <h4>Responsive Web Design</h4>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <div id="Paris" class="tabcontent">
+    <h3>Backend Development</h3>
+    <div class="row">
+        <div class="col-sm-3">
+        <div class="thumbnail skilldiv">
+            <img src="./images/skills/node.png">
+            <h4>Node.js</h4>
+        </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="thumbnail skilldiv">
+                <img src="./images/skills/express.png">
+                <h4>Express.js</h4>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="thumbnail skilldiv">
+                <img src="./images/skills/mongo.png">
+                <h4>Mongodb</h4>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="thumbnail skilldiv">
+                <img src="./images/skills/jquery.png">
+                <h4></h4>
+            </div>
+        </div>
+       
+    </div>
+  </div>
+  
+  <div id="Tokyo" class="tabcontent">
+    <h3>Database</h3>
+    <div class="row">
+        
+        <div class="col-sm-3">
+            <div class="thumbnail skilldiv">
+                <img src="./images/skills/mongo.png">
+                <h4>MongoDB</h4>
+            </div>
+        </div>
 
-                    <!--skills lists-->
-                    <div class="col-md-3">
-                    
-                        <ul class="skillslist">
-                            <h3>Backend Development</h3>
-                          <li></li>
-                          <li></li>
-                          <li></li>
-                          <li></li>
-                        </ul>
-                       </div>
-                       <!--skills lists end-->
+        <div class="col-sm-3">
+            <div class="thumbnail skilldiv">
+                <img src="./images/skills/sql.jpg">
+                <h4>Sql</h4>
+            </div>
+        </div>
+    </div>
+  </div>
 
-                        <!--skills lists-->
-                   <div class="col-md-3">
-                    
-                    <ul class="skillslist">
-                        <h3>Frameworks</h3>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
-                   </div>
-                   <!--skills lists end-->
 
-                    <!--skills lists-->
-                    <div class="col-md-3">
-                    
-                        <ul class="skillslist">
-                            <h3>Database</h3>
-                          <li></li>
-                          <li></li>
-                          <li></li>
-                          <li></li>
-                        </ul>
-                       </div>
-                       <!--skills lists end-->
-               </div>
-         
+  <div id="Japan" class="tabcontent">
+    <h3>Framework</h3>
+    <div class="row">
+        
+        <div class="col-sm-3">
+            <div class="thumbnail skilldiv">
+                <img src="./images/skills/angular.png">
+                <h4>Angular</h4>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="thumbnail skilldiv">
+                <img src="./images/skills/bootstrap.png">
+                <h4>Bootstrap</h4>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="thumbnail skilldiv">
+                <img src="./images/skills/express.png">
+                <h4>Express.js</h4>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!--new tab-->
+  <div id="Interests" class="tabcontent">
+    <h3>Interests</h3>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="thumbnail skilldiv">
+                <img src="./images/skills/travelling.jpg">
+                <h4>Travelling</h4>
+            </div>
+        </div>
+        
+        <div class="col-sm-3">
+            <div class="thumbnail skilldiv">
+                <img src="./images/skills/book.png">
+                <h4>Book Reading</h4>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="thumbnail skilldiv">
+                <img src="./images/skills/movie.png">
+                <h4>Watching Movies</h4>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="thumbnail skilldiv">
+                <img src="./images/skills/music.jpg">
+                <h4>Music</h4>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="thumbnail skilldiv">
+                <img src="./images/skills/blogging.jpg">
+                <h4>Blogging</h4>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!--new tab end-->
+
+  <!--new tab-->
+  <div id="Management" class="tabcontent">
+    <h3>Management</h3>
+    <div class="row">
+        
+        <div class="col-sm-3">
+            <div class="thumbnail skilldiv">
+                <img src="./images/skills/planning.png">
+                <h4>Planning</h4>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="thumbnail skilldiv">
+                <img src="./images/skills/goals.png">
+                <h4>Goals</h4>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="thumbnail skilldiv">
+                <img src="./images/skills/team.jpg">
+                <h4>Team Work</h4>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="thumbnail skilldiv">
+                <img src="./images/skills/communication.jpg">
+                <h4>Communication</h4>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!--new tab end-->
+
+  
+            <!--tabs end-->
            </section>
         </div>
      
@@ -169,68 +277,6 @@
   });
 </script>
 <script src="./js/footer.js"></script>
+<script src="./js/tabs.js"></script>
 </body>
-<!--footer-->
-<footer>
- <div class="container-fluid">
-   <div class="row">
-     <div class="col-md-3 col-sm-3">
-    <div class="footer-widget">
-      <h2>Quick Links </h2>
-      <ul>
-        <li><a href="">Hire Me For Your Project</a></li>
-        <li><a href="">About Me</a></li>
-        <li><a href="">Work Experience</a></li>
-        <li><a href="">WebTools</a></li>
-        <li><a href="">Contact Us</a></li>
-      </ul>
-    </div>
-     </div>
-     <div class="col-md-3 col-sm-3">
-      <!--footer-widget-->
-      <div class="footer-widget">
-        <h2>Our Expertise</h2>
-        <ul>
-          <li><a href="">Ashishtech Solution</a></li>
-          <li><a href="">Youtube Channel</a></li>
-          <li><a href="">Work Experience</a></li>
-          <li><a href="">WebTools</a></li>
-          <li><a href="">Contact Us</a></li>
-        </ul>
-      </div>
-      <!--footer widget ends-->
-    </div>
-    <div class="col-md-3 col-sm-3">
-       <!--footer-widget-->
-       <div class="footer-widget">
-        <h2>Our Services </h2>
-        <ul>
-          <li><a href="">Web Designer in Delhi NCR</a></li>
-          <li><a href="">Ecommerce Website Designer in Delhi</a></li>
-          <li><a href="">PSD to HTML Conversion</a></li>
-          <li><a href="">PSD to Bootstrap Conversion</a></li>
-          <li><a href="">SEO</a></li>
-        </ul>
-      </div>
-      <!--footer widget ends-->
-    </div>
-    <div class="col-md-3 col-sm-3">
-       <!--footer-widget-->
-       <div class="footer-widget">
-        <h2>Recent Stories</h2>
-        <ul>
-          <li><a href="">Hire Me For Your Project</a></li>
-          <li><a href="">About Me</a></li>
-          
-        </ul>
-      </div>
-      <!--footer widget ends-->
-    </div>
-   </div>
- </div>
- <div class="footer-bottom z-depth-2">
-   <a href="">copyright &copy; 2020</a>
- </div>
-</footer>
-<!--footer end-->
 </html>

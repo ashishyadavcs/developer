@@ -14,6 +14,7 @@ body::-webkit-scrollbar-track{background: linear-gradient(#777,#ccc);}
 .sidenav a{text-decoration: none;}
 .sidenav ul li{background: #000;color: #f1f1f1;}
 nav{background:rgb(27, 27, 48);}
+.sidenav .user-view .background{background-size:contain;background-position: center;}
 @media screen and (min-width:600px){
     nav{height: 80px;padding: 10px;}
     /*sidenav pic user pic*/
@@ -138,7 +139,6 @@ overflow: hidden;
 .footer-widget ul li:hover{padding: 5px;color: #f1f1f1;text-align: left;}
 .footer-widget ul li:hover a{animation: movesfooter 0.4s,textt 0.4s;}
 .footer-widget ul li a{color: #aca1a1;text-decoration: none;}
-
 
 footer .footer-bottom{background: rgb(5, 5, 29);
 color: #f1f1f1;padding: 30px;text-align: center;}
