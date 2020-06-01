@@ -43,7 +43,7 @@ section.skills{
   /* Style the tab content */
   .tabcontent {
       text-align: center;
-    background-color: rgb(204, 204, 204);
+    
     animation: fadeEffect 1s;
     transition: all 1s linear;
     display: none;

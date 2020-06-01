@@ -8,7 +8,7 @@ body::-webkit-scrollbar-button{height: 0}
 body::-webkit-scrollbar-thumb{background:linear-gradient(red,purple);border-radius: 30px;}
 body::-webkit-scrollbar-track{background: linear-gradient(#777,#ccc);}
 /*custom scrollbar ends.........................................*/
-
+/*---------------------------------nav----------------------------------------*/
 .nav-wrapper .social-network li a{font-weight: 600;font-size: 19px;}
 .nav-wrapper ul li:hover a{color: #f1f1f1;text-decoration: none;}
 .sidenav a{text-decoration: none;}
@@ -16,7 +16,7 @@ body::-webkit-scrollbar-track{background: linear-gradient(#777,#ccc);}
 nav{background:rgb(27, 27, 48);}
 .sidenav .user-view .background{background-size:contain;background-position: center;}
 @media screen and (min-width:600px){
-    nav{height: 80px;padding: 10px;}
+    nav{height: 80px;padding: 10px;background: #000!important;}
     /*sidenav pic user pic*/
     .sidenav .user-view .circle {
         height: 90px !important;
@@ -24,7 +24,7 @@ nav{background:rgb(27, 27, 48);}
     }
     
 }
-
+/*------------------------nav end------------------------------------*/
 
 /*body.............................................................................*/
 
