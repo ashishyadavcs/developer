@@ -25,6 +25,10 @@ $routeProvider
     templateUrl: 'aboutme.html',
     
    })
+   .when('/hireme', {
+    templateUrl: 'hireme.html',
+    
+   })
 .otherwise({
  redirectTo: '/'
 }); 

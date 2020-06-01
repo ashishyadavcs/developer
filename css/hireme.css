@@ -1,0 +1,5 @@
+.pagebanner h1{transform: translateY(-200px);font-family:  'Vidaloka', serif;}
+.pagebanner{background:url('./images/ashish.jpg');}
+h2,h3,h4{font-family:  'Vidaloka', serif;}
+.hire ul{font-style: normal;}
+.hire ul li {font-size:24px ;font-weight: 600;}
