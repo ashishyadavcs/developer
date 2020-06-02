@@ -49,11 +49,11 @@ font-family:  'Vidaloka', serif;
     .nav-wrapper .social-network li a{font-weight: 500;font-size: 19px;padding:0 12px;}
 }
 /*about me........................*/
-.about-me{background: linear-gradient(#2E3192 , #1BFFFF);color: #f1f1f1;padding:6%;height: 100vh;}
+.about-me{background: linear-gradient(135deg,rgb(184, 75, 222),rgb(58, 67, 70));color: #f1f1f1;padding:6%;height: 100vh;}
 .about-me .face{width: 40%;float: left;}
 .about-me .face img{border-radius: 50%;}
 .about-me .info{width: 60%;float: right;box-sizing: border-box;padding: 20px;}
-.about-me .info p{margin-bottom: 30px;font-family:  'Vidaloka', serif;}
+.about-me .info p{margin-bottom: 30px;font-family:  'Vidaloka', serif;font-size: 19px;}
 .about-me .info h2{font-family:  'Vidaloka', serif;}
 .clear{clear: both;}
 a.aboutbutton{color: #f1f1f1;text-decoration: none;}
