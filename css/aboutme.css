@@ -3,7 +3,21 @@
     text-align: justify;
 }
 h1,h2,h3{font-family:  'Vidaloka', serif;}
-
+@media screen and (min-width:700px){
+  h2.strike {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 2px solid #000; 
+    line-height: 0.1em;
+     
+    margin:50px
+  } 
+  
+  h2.strike span { 
+     background:#fff; 
+     padding:0 10px; 
+  }
+}
 section.skills{
     margin-bottom: 5%;
 }

@@ -1,5 +1,5 @@
 *{box-sizing: border-box;};
-body{scroll-behavior: smooth;background:rgb(27, 27, 48); ;}
+body{scroll-behavior: smooth;background:rgb(27, 27, 48); opacity: 1!important;;}
 html{scroll-behavior: smooth;}
 
 /*custom scrollbar.........................................*/
@@ -24,7 +24,6 @@ nav{background:rgb(27, 27, 48);}
 /*------------------------nav end------------------------------------*/
 
 /*body.............................................................................*/
-
 .banner{
     height:90vh;
     background-image:url('https://images.pexels.com/photos/34125/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') ;

@@ -29,6 +29,10 @@ $routeProvider
     templateUrl: 'hireme.html',
     
    })
+   .when('/website-designer-in-delhi', {
+    templateUrl: 'website-designer-in-delhi.html',
+    
+   })
 .otherwise({
  redirectTo: '/'
 }); 
