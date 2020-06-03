@@ -11,9 +11,10 @@ body::-webkit-scrollbar-track{background: linear-gradient(#777,#ccc);}
 /*---------------------------------nav----------------------------------------*/
 .nav-wrapper .social-network li a{font-weight: 600;font-size: 19px;}
 .nav-wrapper ul li:hover a{color: #f1f1f1;text-decoration: none;}
+.sidenav{z-index: 7623764767264376762368765642386563873;}
 .sidenav a{text-decoration: none;}
 .sidenav ul li{background: #000;color: #f1f1f1;}
-nav{background:rgb(27, 27, 48);}
+nav{background:rgb(27, 27, 48);z-index: 7623764767264376762368765642386563873;}
 
 @media screen and (min-width:600px){
     nav{height: 80px;padding: 10px;background: #000!important;}
@@ -142,10 +143,13 @@ footer .footer-bottom>a{text-decoration: none;color: #9e9a9a;}
 /*share button*/
 .sbuttons {
    position: fixed;
-  		 bottom:40px;
-	    right:40px;
-  		 
+  		 bottom:20px;
+	    left:40px;
+  		 z-index: 7867838462856456;
   		 float:bottom; 
+}
+@media screen and (max-width:600px){
+  .sbuttons{left:20px;}
 }
 .sbutton {
   display: block;
