@@ -1,7 +1,6 @@
 .pagebanner h1{
     transform: translateY(-200px);
     font-family:  'Vidaloka', serif;
-    animation:awe 1s linear infinite  alternate;
     transition: all 0.6s linear;
 }
 
