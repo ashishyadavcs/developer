@@ -144,12 +144,12 @@ footer .footer-bottom>a{text-decoration: none;color: #9e9a9a;}
 .sbuttons {
    position: fixed;
   		 bottom:20px;
-	    left:40px;
+	    right:40px;
   		 z-index: 7867838462856456;
   		 float:bottom; 
 }
 @media screen and (max-width:600px){
-  .sbuttons{left:20px;}
+  .sbuttons{right:20px;}
 }
 .sbutton {
   display: block;
