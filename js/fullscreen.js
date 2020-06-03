@@ -1,18 +1,18 @@
-function getFullScreen(){
+function getFullscreenElement(){
     return document.fullscreenElement
-    || document.webkitFullScreenElement
+    || document.webkitFullscreenElement
     || document.mozfullscreenElement
     || document.msfullscreenElement
 }
 
-function toggleFullScreen(){
+function toggleFullscreen(){
     if(getFullScreen){
         document.exitFullscreen();
     }else{
-        document.documentElement.requestFullscreen().catch(console.log);
+        document.getElementById('myBox').requestFullscreen().catch(console.log);
     }
 }
 
 document.addEventListener('dblclick',()=>{
-toggleFullScreen();
+toggleFullscreen();
 })
