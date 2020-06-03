@@ -50,7 +50,7 @@ font-family:  'Vidaloka', serif;
     .nav-wrapper .social-network li a{font-weight: 500;font-size: 19px;padding:0 12px;}
 }
 /*about me........................*/
-.about-me{background: linear-gradient(135deg,rgb(184, 75, 222),rgb(129, 142, 234));;color: #f1f1f1;padding:6%;height:100vh;}
+.about-me{box-sizing: border-box;background: linear-gradient(135deg,rgb(184, 75, 222),rgb(129, 142, 234));color: #f1f1f1;padding:6%;height:100vh;}
 .about-me .face{width: 40%;float: left;}
 .about-me .face img{border-radius: 50%;}
 .about-me .info{width: 60%;float: right;box-sizing: border-box;padding: 20px;}
@@ -84,7 +84,7 @@ a.aboutbutton{color: #f1f1f1;text-decoration: none;}
 
 
 /* footer...........................................................................*/
-footer{background: rgb(18, 12, 49);
+footer{background: rgb(8, 5, 39);
 width: 100%;
 color: #f1f1f1;
 border-top: 2px solid #f1f1f1;
