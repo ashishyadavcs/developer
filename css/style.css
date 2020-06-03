@@ -50,7 +50,7 @@ font-family:  'Vidaloka', serif;
     .nav-wrapper .social-network li a{font-weight: 500;font-size: 19px;padding:0 12px;}
 }
 /*about me........................*/
-.about-me{background: linear-gradient(135deg,rgb(184, 75, 222),rgb(129, 142, 234));;color: #f1f1f1;padding:6%;height: 100vh;}
+.about-me{background: linear-gradient(135deg,rgb(184, 75, 222),rgb(129, 142, 234));;color: #f1f1f1;padding:6%;height:100vh;}
 .about-me .face{width: 40%;float: left;}
 .about-me .face img{border-radius: 50%;}
 .about-me .info{width: 60%;float: right;box-sizing: border-box;padding: 20px;}
@@ -64,6 +64,7 @@ a.aboutbutton{color: #f1f1f1;text-decoration: none;}
   background: linear-gradient(red,rgb(15, 10, 15));
   color: #f1f1f1;
   border-radius: 50px;
+  display: inline-block;
   text-decoration: none;
   border: 2px solid #ddd}
   /*-------sidebar mibile..........................*/
@@ -91,11 +92,23 @@ overflow: hidden;
 }
 
 .footer-widget{overflow: hidden;}
-.footer-widget h2{font-size: 24px;border-bottom: 1px solid #ddd;padding: 15px 7px;
+.footer-widget h2{font-size: 24px;padding: 15px 7px;
+   /*border style*/
+   border: 2px solid;
+   border-image-slice: 1;
+   border-width: 4px;
+   border-image-source: linear-gradient(right,rgb(245, 241, 15),rgb(212, 24, 24));
+    /*border style end*/
 
-    
+    font-weight: 600;
+    background:-webkit-linear-gradient(right,rgb(245, 241, 15),rgb(212, 24, 24));
     font-family:  'Vidaloka', serif;
-        
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    
+    
+    
       
 
 }

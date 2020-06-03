@@ -1,4 +1,4 @@
-function getFullscreenElement(){
+function getFullscreen(){
     return document.fullscreenElement
     || document.webkitFullscreenElement
     || document.mozfullscreenElement
@@ -9,7 +9,7 @@ function toggleFullscreen(){
     if(getFullScreen){
         document.exitFullscreen();
     }else{
-        document.getElementById('myBox').requestFullscreen().catch(console.log);
+        document.querySelector('html').requestFullscreen().catch(console.log);
     }
 }
 

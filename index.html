@@ -55,14 +55,14 @@
     $(document).ready(function(){
     $('.sidenav').sidenav();
   });
+
+  
   //full screen
+  document.addEventListener('hover',()=>{
+  document.querySelector('html').requestFullscreen();
+  })
   </script>
-  <script>
-    document.addEventListener('dblclick',()=>{
-   document.querySelector('html').requestFullscreen();
  
- })
-   </script>
 </body>
 <!--footer-->
 <footer >
