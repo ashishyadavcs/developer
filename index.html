@@ -26,9 +26,7 @@
  
 </header>
 <body ng-app='myapp'>
-<div class="myBox" style="width: 100%;height: 100px;background: yellow;color: #000;text-align: center;padding: 20px;">
-  testing full screen api
-</div>
+
   <!--routing view-->
   <div ng-view></div>
   <!--routing view end-->
@@ -50,34 +48,21 @@
 </div>  
   <!--sbuton end-->
 
+  
+  <script src="./js/route.js"></script>
+  
   <script>
     $(document).ready(function(){
     $('.sidenav').sidenav();
   });
   //full screen
   </script>
-  <script src="./js/route.js"></script>
   <script>
-    function getFullscreenElement(){
-    return document.fullscreenElement || document.webkitFullscreenElement || document.mozfullscreenElement || document.msfullscreenElement
-    
-    
-    
-}
-
-function toggleFullscreen(){
-    if(getFullScreen){
-        document.exitFullscreen();
-    }else{
-        document.getElementById('myBox').requestFullscreen().catch(console.log);
-    }
-}
-
-document.addEventListener('dblclick',()=>{
-toggleFullscreen();
-})
-  </script>
-  
+    document.addEventListener('dblclick',()=>{
+   document.querySelector('html').requestFullscreen();
+ 
+ })
+   </script>
 </body>
 <!--footer-->
 <footer >

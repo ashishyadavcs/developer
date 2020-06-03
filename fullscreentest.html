@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <!--head start-->
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<!--head end-->
+
+<body >
+<div id="myBox" style="width: 100%;height: 100px;background: yellow;color: #000;text-align: center;padding: 20px;">
+  testing full screen api
+</div>
+ 
+	
+ 
+</body>
+<script>
+    /*
+    function getFullscreenElement(){
+    return document.fullscreenElement || document.webkitFullscreenElement || document.mozfullscreenElement || document.msfullscreenElement
+    }
+
+function toggleFullscreen(){
+    if(getFullscreenElement){
+        document.exitFullscreen();
+    }else{
+        document.getElementById('myBox').requestFullscreen().catch(console.log);
+    }
+}
+
+document.addEventListener('dblclick',()=>{
+toggleFullscreen();
+})*/
+
+function fls(){
+    document.querySelector('html').requestFullscreen();
+}
+fls();
+  </script>
+
+</html>
