@@ -23,7 +23,15 @@ nav{background:rgb(27, 27, 48);z-index: 7623764767264376762368765642386563873;ma
     
 }
 /*------------------------nav end------------------------------------*/
-
+[data-scroll] {
+  transition: opacity 1s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+}
+[data-scroll="out"] {
+  opacity: 0;
+}
 /*body.............................................................................*/
 .banner{
     height:100vh;
