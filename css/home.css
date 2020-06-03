@@ -31,7 +31,7 @@ padding-bottom:6%;}
 }
 
 @media screen and (max-width:600px){
-   .service{margin: 4% -4%;} 
+   .service{margin: 4% -7%;} 
 }
 
 .service .header{height: 35%;background: rgb(46, 5, 5);padding: 1% 4%;margin: auto;border-radius: 10px 10px 0 0;}
