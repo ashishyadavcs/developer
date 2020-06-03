@@ -50,7 +50,7 @@ font-family:  'Vidaloka', serif;
     .nav-wrapper .social-network li a{font-weight: 500;font-size: 19px;padding:0 12px;}
 }
 /*about me........................*/
-.about-me{background: linear-gradient(135deg,rgb(184, 75, 222),rgb(58, 67, 70));color: #f1f1f1;padding:6%;height: 100vh;}
+.about-me{background: linear-gradient(135deg,rgb(184, 75, 222),rgb(129, 142, 234));;color: #f1f1f1;padding:6%;height: 100vh;}
 .about-me .face{width: 40%;float: left;}
 .about-me .face img{border-radius: 50%;}
 .about-me .info{width: 60%;float: right;box-sizing: border-box;padding: 20px;}
@@ -134,7 +134,8 @@ overflow: hidden;
 .footer-widget ul li{padding: 5px;color: #f1f1f1;text-align: left;overflow: hidden;}
 .footer-widget ul li:hover{padding: 5px;color: #f1f1f1;text-align: left;}
 
-.footer-widget ul li a{color: #aca1a1;text-decoration: none;}
+.footer-widget ul li a{color: #ecd7d7;text-decoration: none;}
+.footer-widget ul li a:active{color: #00e676;transform: scale(1.1);}
 
 footer .footer-bottom{background: rgb(5, 5, 29);
 color: #f1f1f1;padding: 30px;text-align: center;}
@@ -145,7 +146,6 @@ footer .footer-bottom>a{text-decoration: none;color: #9e9a9a;}
    position: fixed;
   		 bottom:20px;
 	    right:40px;
-  		 z-index: 7867838462856456;
   		 float:bottom; 
 }
 @media screen and (max-width:600px){
@@ -256,6 +256,7 @@ footer .footer-bottom>a{text-decoration: none;color: #9e9a9a;}
 .sbutton.fb {
   background: #2ab1ce;
 }
+
 
 .sbutton.whatsapp {
   background: #00e676;
