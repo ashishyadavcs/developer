@@ -10,7 +10,7 @@ background: linear-gradient(135deg,yellow,rgb(230, 13, 13));
 padding-bottom:6%;
 border-radius: 0 0 0 170px 0;}
 @media screen and (max-width:600px){
-    .outbanner{padding-bottom:12%;}
+    .outbanner{padding-bottom:12%}
     
 }
 .bannercontent h1{font-weight: 700;font-family: roboto,sans-serif;color: #f1f1f1;}
