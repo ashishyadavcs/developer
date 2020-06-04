@@ -62,14 +62,12 @@ font-family:  'Vidaloka', serif;
 }
 /*about me........................*/
 .about-me{box-sizing: border-box;
-  background: linear-gradient(135deg,rgb(184, 75, 222),rgb(129, 142, 234));
-  color: #f1f1f1;
   padding:6%;
   padding-bottom: 12%;
   margin-bottom: -300px;
 }
 
-.footerupbg{background: linear-gradient(135deg,rgb(184, 75, 222),rgb(129, 142, 234)) ;}
+.footerupbg{}
 .footerupbg svg{stroke: transparent;stroke-width: 0px;border: none;outline: none;}
 .about-me .face{width: 40%;float: left;}
 .about-me .face img{border-radius: 50%;}
