@@ -26,15 +26,7 @@ border-bottom: 0.2px solid rgb(29, 25, 25);}
     
 }
 /*------------------------nav end------------------------------------*/
-[data-scroll] {
-  transition: opacity 1s;
-}
-[data-scroll="in"] {
-  opacity: 1;
-}
-[data-scroll="out"] {
-  opacity: 0;
-}
+
 /*body.............................................................................*/
 .banner{
     height:100vh;
