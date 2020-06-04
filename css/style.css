@@ -274,7 +274,10 @@ footer .footer-bottom>a{text-decoration: none;color: #9e9a9a;}
   opacity: 1;
 }
 .sbutton.mainsbutton {
-  background: #2ab1ce;color: #f1f1f1
+  background: #23094d;
+  color: #f1f1f1;
+  box-shadow: 0px 0px 8px 5px #ccc;
+  display: inline-block;
 }
 .sbutton.gplus {
   background: #F44336;
