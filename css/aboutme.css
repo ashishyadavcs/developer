@@ -20,6 +20,7 @@ h1,h2,h3{font-family:  'Vidaloka', serif;}
 }
 section.skills{
     margin-bottom: 5%;
+    width:100%;
 }
 
 .skillslist{list-style: none;}
@@ -56,8 +57,7 @@ section.skills{
   
   /* Style the tab content */
   .tabcontent {
-      text-align: center;
-    
+    text-align: center;
     animation: fadeEffect 1s;
     transition: all 1s linear;
     display: none;
@@ -83,11 +83,12 @@ section.skills{
 
 /*skills tab content*/
 .tabcontent .thumbnail{
+  
     border:1px solid #777;
-    height: 260px;margin-bottom:7%;width: 260px;
+    height: 150px;margin-bottom:10%;width: 150px;
     padding: auto;
     box-shadow: 3px 3px 3px rgba(73, 65, 65, 0.3)}
-
+   
     @media screen and (max-width:700px){
        .tabcontent .thumbnail{
         height: 230px;margin-bottom:4%;width:auto;
