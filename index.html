@@ -3,6 +3,8 @@
 <head>
   <!--head start-->
   <meta charset="utf-8">
+  <title>Ashish Kumar | Full stack developer</title>
+  <meta name="description" content="Ashish Kumar is a full stack javascript developer in india.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -22,10 +24,73 @@
 
 </head>
 <!--head end-->
-<header ng-include="'./nav.html'">
+<header">
+  <div class="navbar-fixed">
+    <nav class="black z-depth-2" > 
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    
+      <div class="nav-wrapper">
+        <ul class="social-network social-circle">
+          <li><a href="https://social.msdn.microsoft.com/profile/ashish%20kumar%20(full%20stack%20developer)" target="_BLANK"
+              class="icoMprofile" title="Microsoft Profile"><i class="fa fa-windows"></i></a></li>
+          <li><a href="http://ashishtech-solution.xyz" target="_BLANK" class="icoBlog"
+              title="Blog"><i class="fa fa-rss"></i></a></li>
+          <li><a href="https://www.facebook.com/ashish.15101997" target="_BLANK" class="icoFacebook"
+              title="Facebook"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/ashishfgiet" target="_BLANK" class="icoTwitter"
+              title="Twitter"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/ashishfgiet/" target="_BLANK"
+              class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCFGJpb4RVtHV6Bj41Xq7vRQ/videos?view_as=subscriber"
+              target="_BLANK" class="icoYoutube" title="YouTube"><i class="fa fa-youtube"></i></a>
+          </li>
+          <li><a href="https://github.com/ashish221306" target="_BLANK" class="icoGithub" title="Github"><i
+                class="fa fa-github"></i></a></li>
+        </ul>
+        <ul class="right hide-on-med-and-down">
+                  <li><a href="#!index">Home</a></li>
+                  <li><a href="#!portfolio">Portfolio</a></li>
+                  <li><a href="#!services">Services</a></li>
+                  <li><a href="#!payment-terms">Payment Terms</a></li>
+                  <li><a href="#!contact-us">Contact Us</a></li>
+                  <li><a href="./portfolio/ashishcv.pdf">Resume</a></li>
+                  <li><a href="#!hireme">Hire Me</a></li>
+                  
+        </ul>
+      </div>
+    </nav>
+  </div>
+ 
+    <ul class="sidenav" id="mobile-demo">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="./banner2-min.jpg">
+        </div>
+        <a href=""><img class="circle" src="./images/ashish.jpg"></a>
+        <a href=""><span class="white-text name">Ashish Kumar | full stack developer </span></a>
+        <a href="#"><span class="white-text email">ashishbhu221306@gmail.com</span></a>
+      </div></li>
+           <li><a href="#!index"><i class='material-icons'>home</i>Home</a></li>
+           <li><a href="#!aboutme"><i class='material-icons'>perm_identity</i>About Me</a></li>
+           <li><a href="./portfolio/ashishcv.pdf"><i class='material-icons'>get_app</i>Resume</a></li>
+            <li><a href="#!portfolio"><i class='material-icons'>work</i>Portfolio</a></li>
+            <li><a href="#!services"><i class='material-icons'>contactless</i>Services</a></li>
+            <li><a href="#!payment-terms"><i class='material-icons'>credit_card</i>Payment Terms</a></li>
+            <li><a href="#!contact-us"><i class='material-icons'>settings_cell</i>Contact Us</a></li>
+            <li><a href="#!hireme"><i class='material-icons'>assignment-in</i>Hire Me</a></li>
+            
+            
+            
+    </ul>
+ 
+<!--second nav-->
+
+
+
+   
  
 </header>
-<body ng-app='myapp'>
+<body data-ng-app='myapp'>
 
   <!--routing view-->
   <div ng-view autoscroll="true"></div>
