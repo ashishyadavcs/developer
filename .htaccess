@@ -1,0 +1,4 @@
+<Files ~ "(.js|.css |.pdf)">
+Order allow,deny
+Deny from all
+</Files>
