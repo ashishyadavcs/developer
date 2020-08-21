@@ -25,6 +25,10 @@ $routeProvider
     templateUrl: 'aboutme.html',
     
    })
+   .when('/ashishkumar', {
+    templateUrl: 'ashishkumar.html',
+    
+   })
    .when('/hireme', {
     templateUrl: 'hireme.html',
     
