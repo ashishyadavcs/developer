@@ -168,7 +168,7 @@ footer .footer-bottom>a{text-decoration: none;color: #9e9a9a;}
 .sbuttons {
    position: fixed;
        bottom:20px;
-       z-index: -1;
+       z-index: 2;
 	    right:40px;
   		 float:bottom; 
 }
