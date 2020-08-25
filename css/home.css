@@ -1,13 +1,13 @@
 .bannercontent{
     padding: 60px 40px;
     background: #000000;
-    height: 82vh;
+    
     border-radius: 0 0 170px 0;
     
 }
 .outbanner{/*background:linear-gradient(-135deg,rgb(129, 142, 234),rgb(184, 75, 222));*/
 background: linear-gradient(135deg,yellow,rgb(230, 13, 13));
-padding-bottom:6%;
+padding-bottom:10%;
 border-radius: 0 0 0 170px 0;}
 @media screen and (max-width:600px){
     .outbanner{padding-bottom:12%}
