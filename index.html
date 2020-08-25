@@ -4,7 +4,7 @@
   <!--head start-->
   <meta charset="utf-8">
   <title>Ashish Kumar | Full stack developer</title>
-  <meta name="description" content="Ashish Kumar is a full stack javascript developer in india.">
+  <meta name="description" content="Ashish Kumar is a full stack javascript developer, mean stack developer.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#000">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -25,10 +25,12 @@
 
 </head>
 <!--head end-->
-<header">
+
+<body data-ng-app='myapp'>
+<header>
   <div class="navbar-fixed">
     <nav class="black z-depth-2" > 
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     
       <div class="nav-wrapper">
         <ul class="social-network social-circle">
@@ -91,8 +93,6 @@
    
  
 </header>
-<body data-ng-app='myapp'>
-
   <!--routing view-->
   <div ng-view autoscroll="true"></div>
   <!--routing view end-->
@@ -113,11 +113,7 @@
 	  
 </div>  
   <!--sbuton end-->
-
-  
-  <script src="./js/route.js"></script>
-  
-  <script>
+<script>
     $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.footer-widget ul li a').append('<i class="fa fa-hand-o-right"></i>')
@@ -131,6 +127,10 @@
   document.querySelector('html').requestFullscreen();
   })
   </script>
+  
+  <script src="./js/route.js"></script>
+  
+  
  
 </body>
 <!--footer-->

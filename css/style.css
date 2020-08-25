@@ -17,7 +17,7 @@ body::-webkit-scrollbar-track{background: linear-gradient(#777,#ccc);}
 .sidenav a{text-decoration: none;}
 .sidenav ul li{background: #000;color: #f1f1f1;}
 nav{background:rgb(27, 27, 48);z-index: 7623764767264376762368765642386563873;margin-top: 0;
-border-bottom: 0.2px solid rgb(29, 25, 25);}
+border-bottom: 0.2px solid #ccc;}
 
 @media screen and (min-width:607px){
     nav{height: 80px;padding: 10px;background: #000!important;}
@@ -29,7 +29,7 @@ border-bottom: 0.2px solid rgb(29, 25, 25);}
 
 /*body.............................................................................*/
 .banner{
-    height:100vh;
+    
     background-image:url('https://images.pexels.com/photos/34125/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') ;
     margin: auto;
     padding:50px;
@@ -168,7 +168,7 @@ footer .footer-bottom>a{text-decoration: none;color: #9e9a9a;}
 .sbuttons {
    position: fixed;
        bottom:20px;
-       z-index: 5;
+       z-index: -1;
 	    right:40px;
   		 float:bottom; 
 }
