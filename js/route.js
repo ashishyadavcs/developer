@@ -14,6 +14,10 @@ $routeProvider
     templateUrl: 'portfolio.html',
     
    })
+    .when('/techskills', {
+    templateUrl: 'techskills.html',
+    
+   })
    .when('/payment-terms', {
     templateUrl: 'payment-terms.html',
     
