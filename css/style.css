@@ -39,12 +39,10 @@ border-bottom: 0.2px solid #ccc;}
     color:#f1f1f1;
     text-align: center;
 }
-.banner h1{font-weight: 700;padding-top: 10%;
+.banner h1{
+font-weight: 700;padding-top: 10%;
 text-shadow:7px 1px 3px blue ;
 font-family:  'Vidaloka', serif;
-
-
-
 
 }
 @media screen and (max-width:600px){
@@ -83,7 +81,7 @@ a.aboutbutton{color: #f1f1f1;text-decoration: none;}
 
 
 @media screen and (max-width:600px){
-    h1,h2,h3{font-size: 2rem;}
+    h1,h2,h3{font-size: 1rem;}
     .about-me{display: block;}
     .about-me .face{width: 100%;text-align: center;float:none;}
     .about-me .info{width: 100%;text-align: center;font-family:  'Vidaloka', serif;}

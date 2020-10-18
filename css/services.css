@@ -2,4 +2,8 @@
 .card .card-action a{color: green!important; font-weight: 600;}
 h1{font-family:  'Vidaloka', serif;}
 .card .card-title{background: #000;width: 100%;}
+.card image{
+    height: 300px;
+    
+}
 

@@ -3,7 +3,7 @@ angular.module('myapp', ['ngRoute']).config(['$routeProvider',function($routePro
 {
 $routeProvider
 .when('/', {
- templateUrl: 'home.html',
+ templateUrl: 'index.html',
  
 })
 .when('/services', {
@@ -12,6 +12,10 @@ $routeProvider
    })
    .when('/portfolio', {
     templateUrl: 'portfolio.html',
+    
+   })
+    .when('/techskills', {
+    templateUrl: 'techskills.html',
     
    })
    .when('/payment-terms', {
