@@ -3,7 +3,7 @@ angular.module('myapp', ['ngRoute']).config(['$routeProvider',function($routePro
 {
 $routeProvider
 .when('/', {
- templateUrl: 'index.html',
+ templateUrl: 'home.html',
  
 })
 .when('/services', {

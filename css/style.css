@@ -20,7 +20,7 @@ nav{background:rgb(27, 27, 48);z-index: 7623764767264376762368765642386563873;ma
 border-bottom: 0.2px solid #ccc;}
 
 @media screen and (min-width:607px){
-    nav{height: 80px;padding: 10px;background: #000!important;}
+    nav{height: 80px;padding: 10px;background: #000!important;z-index: 7667677;}
     /*sidenav pic user pic*/
     
     

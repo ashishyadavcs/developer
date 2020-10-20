@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--
+1.download button will not work on file protocol
+
+-->
+  <style>
+    html,
+    body {
+      margin: 0;
+    }
+
+    #alert {
+      z-index: 7634;
+      display: none;
+      position: fixed;
+      left: 30px;
+      top: 20px;
+    }
+
+    @media screen and (max-width:600px) {
+      #alert {
+        position: fixed;
+        left: 10px;
+        top: 20px;
+      }
+
+
+    }
+
+    .view {
+
+      height: 80vh;
+      background: rgba(0, 0, 0, 0.8);
+
+    }
+
+    .navigation {
+      height: 20vh;
+      margin-top: 2px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #ccc;
+      text-align: center;
+      z-index: 767;
+      
+    }
+
+    .navigation ul {
+      overflow-x: auto;
+      list-style: none;
+      padding:20px;
+      white-space: nowrap;
+    }
+
+
+@media screen and (max-width:700px) {
+  .navigation ul{
+    display:flex;
+    list-style: none;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    scrollbar-width: none;
+  }
+}
+
+
+    .navigation ul li {
+      display: inline-block;
+      margin-right: 2%;
+    }
+
+    .navigation ul li .navitem {
+      
+      cursor: pointer;
+      height:80px;
+      width: 80px;
+      background: #ffffff;
+    }
+
+    .view .header {
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .view .header .left {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    .view .header .right {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    .header .right ul li {
+      display: inline-block;
+      margin-right: 3px;
+      cursor: pointer;
+    }
+
+    .header .right ul li a i {
+      font-weight: 18px;
+    }
+
+    /*pre-next*/
+    .prev,
+    .next {
+      background-color: rgba(0, 0, 0, 0.8);
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+      text-decoration: none;
+
+    }
+
+    /*modal content*/
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 3px;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      text-decoration: none;
+
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+    }
+
+    /* Modal Content */
+    .modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      width: 75%;
+      overflow-y: auto;
+      max-width: 1200px;
+    }
+
+
+
+
+    .demo {
+      opacity: 0.6;
+      transition: 0.3s;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+      transform: scale(1.1);
+
+    }
+
+    
+
+    img.hover-shadow {
+      transition: 0.3s;
+    }
+
+    .hover-shadow:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .mySlides {
+      display: none;
+      max-height: 100%;
+    }
+
+    .mySlides img,
+    .mySlides iframe,
+    .mySlides div {
+      height: 380px;
+    }
+
+    @media screen and (max-width: 700px) {
+      .mySlides div {
+        padding-top: 43% !important;
+      }
+    }
+
+    .cursor {
+      cursor: pointer;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+
+    <div class='view'>
+      <div class="header">
+
+        <div class="left">
+          <button id="slideno" class="btn text-white border-secondary">1</button>
+        </div>
+        <div class="right">
+          <ul>
+            <li><button class="btn bg-dark text-white border border-secondary" data-toggle="modal"
+                data-target="#exampleModal"><i class="fa fa-trash"></i></button></li>
+            <li><button id="downloadbutton" class="btn bg-dark text-white border-secondary"><i class="fa fa-download"
+                  style="color: #ffffff;"></i></button></li>
+            <li><button class="btn bg-dark text-white border-secondary"><i class="fa fa-times"></i></button></li>
+          </ul>
+
+          <div id="alert" class="alert alert-success alert-dismissible">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Success!</strong> File has been deleted successfully.
+          </div>
+        </div>
+      </div>
+
+      <!--expt-->
+
+
+
+      <div class="modal-content">
+
+        <div class="mySlides" src="./files/package.json">
+
+          <iframe src="./files/package.json" style="width:100%;background: #ccc;"></iframe>
+        </div>
+
+        <div class="mySlides" src="./files/keywords.txt">
+
+          <div style="width: 100%;color: #ffffff;background: rgba(0,0,0,0.8);text-align: center;padding-top: 15%;">This
+            viewer can not show .txt file<br>
+            <a href="./files/keywords.txt" download>download to view</a>
+          </div>
+        </div>
+
+        <div class="mySlides" src="./files/home.jpg">
+
+          <img class="img img-responsive center-block" src="./files/home.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides" src="./files/tools.zip">
+
+          <div style="width: 100%;color: #ffffff;background: rgba(0,0,0,0.8);text-align: center;padding-top: 15%;">This
+            viewer can not show .zip file<br>
+            <a href="./files/tools.zip" download>download to view</a>
+          </div>
+        </div>
+
+        <div class="mySlides" src="./files/ashishcv.docx">
+          <div style="width: 100%;color: #ffffff;background: rgba(0,0,0,0.8);text-align: center;padding-top: 15%;">This
+            viewer can not show .docx file<br>
+            <a href="./files/ashishcv.docx" download>download to view</a>
+          </div>
+        </div>
+
+        <div class="mySlides" src="./files/ashishcv.pdf">
+
+          <iframe src="./files/ashishcv.pdf" style="width:100% ;overflow-y: auto;"></iframe>
+        </div>
+
+        <div class="mySlides" src="./files/animation.html">
+
+          <iframe src="./files/animation.html" style="width:100%;background: #ccc;"></iframe>
+        </div>
+
+
+
+
+
+        <!--expt-->
+
+
+
+      </div>
+
+      <!--navigation-->
+
+      <div class="navigation">
+        <ul>
+          <li class="demo cursor">
+
+            <div class="navitem " onclick="currentSlide(1)">
+              <i class="fa fa-file"
+                style="font-size: 30px;color: rgb(18, 36, 25);padding-left: 13%;padding-top: 35%;"></i>
+            </div>
+
+          </li>
+          <li class="demo cursor">
+
+            <div class="navitem " onclick="currentSlide(2)">
+              <i class="fa fa-file-text"
+                style="font-size: 30px;color: rgb(18, 36, 25);padding-left: 13%;padding-top: 35%;"></i>
+            </div>
+
+
+          </li>
+          <li class="demo cursor">
+
+            <div class="navitem" style="transform: translateY(-5px);">
+              <img class="img responsive" onclick="currentSlide(3)" src="./files/home.jpg" height="100%" width="100%">
+            </div>
+
+          </li>
+          <li class="demo cursor">
+
+            <div class="navitem " onclick="currentSlide(4)">
+              <i class="fa fa-file-archive-o"
+                style="font-size: 30px;color: rgb(9, 128, 58);padding-left: 13%;padding-top: 35%;"></i>
+            </div>
+
+          </li>
+          <li class="demo cursor">
+
+            <div class="navitem " onclick="currentSlide(5)">
+              <i class="fa fa-file-word-o" style="font-size: 30px;color: blue;padding-left: 13%;padding-top: 35%;"></i>
+            </div>
+
+          </li>
+          <li class="demo cursor">
+
+            <div class="navitem " onclick="currentSlide(6)">
+              <i class="fa fa-file-pdf-o" style="font-size: 30px;color: red;padding-left: 13%;padding-top: 35%;"></i>
+            </div>
+
+          </li>
+          <li class="demo cursor">
+
+            <div class="navitem " onclick="currentSlide(7)">
+              <i class="fa fa-file-code-o"
+                style="font-size: 30px;color: rgb(77, 71, 71);padding-left: 13%;padding-top: 35%;"></i>
+            </div>
+
+          </li>
+
+
+        </ul>
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <!--container-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Are you sure , want to delete this file ?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" id="confirm" class="btn btn-primary" data-dismiss="modal">delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace("active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+       
+        document.querySelector('#slideno').innerHTML = [slideIndex]
+        var src = slides[slideIndex - 1].getAttribute('src');
+        console.log(src)
+        document.querySelector('#downloadbutton').addEventListener('click', function () {
+
+          var link = document.createElement('a');
+          link.setAttribute('download', '');
+          console.log(link.getAttribute('download'))
+          document.body.appendChild(link);
+          link.href = src
+          link.click();
+          link.remove();
+        })
+
+
+        dots[slideIndex - 1].className += " active";
+
+
+      }
+
+      //center navigation
+
+      //center nav
+
+
+      document.querySelector('#confirm').addEventListener('click', function () {
+        $('#alert').fadeIn('slow')
+        setTimeout(function () {
+          $('#alert').fadeOut('slow')
+        }, 1000)
+      })
+
+$('.next,.prev,.active').click(function(){
+  var activebox=document.querySelector('.active');
+    activebox.scrollIntoView({
+      behavior:'smooth',
+      block:'center',
+      inline:'center'
+    })
+   
+})
+    </script>
+
+</body>
+
+</html>

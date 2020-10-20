@@ -1,0 +1,449 @@
+body{
+    background-color: rgb(231, 239, 243);
+    padding: 30px 70px;
+
+}
+*{
+    box-sizing: border-box;
+}
+h2,h3{font-size: 15px;
+padding: 10px;
+
+
+}
+h2 span,h3 span{color: rgb(186, 191, 194)}
+ul{
+    list-style: none;
+    list-style-position: outside;
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+    background:#fff ;
+    border-radius: 20px;
+    padding: 20px 10px;
+}
+.lefttopBrand{
+    padding: 10px 20px;
+}
+.lefttopBrand span.single{
+    border-radius: 50%;
+    padding: 4px 10px;
+    text-align:center;
+    background: rgb(250, 98, 10);
+    color: #ffff;
+}
+.lefttopBrand span.suffix{
+    color:rgb(250, 98, 10) ;
+}
+.topTutorItem img{
+    height: 50px;
+    width: 50px;
+}
+.streamingNow ul li{
+    display: inline-block;
+    margin-right: 3px;
+}
+.streamingNow ul li a img ,.profile{
+    border-radius:15px;
+    height: 40px;
+    width: 40px;
+    border: 2px solid rgb(250, 135, 58);
+    padding:2px
+}
+
+.updated_course{
+    margin-bottom: 20px;
+}
+.leftwrap ul li{
+    display: block;
+    padding: 5px 10px;
+}
+.leftwrap ul li i{
+    margin-right: 10px;
+    color: rgb(186, 191, 194)
+}
+.leftwrap ul li i.fa-home{
+    color: rgb(250, 127, 27);
+}
+
+.leftwrap ul li a{color: rgb(186, 191, 194);text-decoration: none;}
+
+.updated_course a{
+    color: black;
+}
+.updated_course span{
+    color: rgb(186, 191, 194)
+}
+.updated_course i{
+    margin-right: 10px;
+    color: rgb(186, 191, 194)
+}
+.updated_course .fa.fa-lightbulb-o{
+    color: rgb(186, 191, 194);
+    background: rgb(184, 6, 184);
+    padding: 14px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+.bottomnav img{
+width: 30px;
+height: 30px;
+}
+.bottomnav span{
+    color: rgb(186, 191, 194)
+}
+.bottomnav .points{
+    margin-top: 20px;
+}
+.rightmostGallery{
+margin-top: 25px;
+ 
+ height: 300px;
+}
+.rightmostGallery .popularItem .item21{
+ width: 100%;
+ margin-bottom: 5px;
+}
+.rightmostGallery .item1 img{
+border-radius: 10px;
+}
+.rightmostGallery .item23{
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+}
+.rightmostGallery img{
+    width:100% ;
+    height: 130px;
+    margin:10px;
+    border-radius: 10px;
+    
+}
+
+.topTutorItem{
+    background: rgb(231, 239, 243);
+    border-radius: 13px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 14px;
+    
+}
+.topTutorItem td{
+    margin: auto 2px;
+}
+.topTutorItem img{
+    border-radius: 10px;
+}
+.topTutorItem i{
+    float: right;
+    color: #000;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px 11px;
+    
+}
+.topTutorItem>div{
+    display: inline-block;
+    
+}
+.leftwrap,.updated_course{
+    background: rgb(231, 239, 243);
+    border-radius: 20px;
+    margin: 10px 10px 20px 10px;
+    margin-bottom: 30px;
+    padding: 20px 30px 20px 10px ;
+    width: auto;
+}
+
+.updated_course i{width: 20%}
+.updated_course a{width:80%}
+.popularThisWeak a{
+    text-decoration: none;
+}
+.popularThisWeak .popularItem{
+   margin: 5px;
+   width: 100%;
+   color: #fff;
+    height: 340px;
+    border-radius: 14px;
+    background: url('./images/CreateIllustrator.jpg');
+}
+.popularThisWeak .item2
+{
+    background: url('./images/urbanDEsign.jpg');
+}
+.popularThisWeak .popularItem table.info{
+    padding: 20px;
+    display: inline-block;
+    font-size: 10px;
+    
+}
+.popularThisWeak .popularItem table.info img{
+    border: none;
+    
+}
+.popularThisWeak .popularItem .info b{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.popularThisWeak .popularItem b.duration{
+    font-size: 12px;
+    padding: 10px;
+    margin-left: 24px;
+    background: rgb(243, 120, 19);
+    border-radius: 10px;
+}
+.popularThisWeak .popularItem .detail{
+    background: rgba(40, 40, 109, 0.945);
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 20px;
+    margin: 8px;
+    position: absolute;
+    bottom: 10px;
+}
+.popularThisWeak .popularItem .detail p{
+    margin: 0;
+    padding: 0;
+}
+
+/*rightmost gallery*/
+.rightmostGallery .Item{
+   margin: 10px;
+   width: 100%;
+   color: #fff;
+    height: 160px;
+    border-radius: 14px;
+    
+}
+.rightmostGallery .item21
+{
+    background: url('./images/RWds_agency.jpg');
+    background-size: cover;
+}
+.rightmostGallery .item22{
+    margin-top: -2px;
+    background: url('./images/urbanDsign2.jpg');
+   margin-right: 2px;
+   width: 102%;
+}
+
+.rightmostGallery .item23{
+    margin-top: -2px;
+  margin-left: 2px;
+    background: url('./images/urbanDsign2.jpg');
+}
+.rightmostGallery .Item table.info{
+    padding:3px;
+    display: inline-block;
+    font-size: 12px;
+    
+}
+.rightmostGallery .item22 table.info{
+    padding:5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
+    font-size: 13px; 
+    margin-left: -7px;
+}
+.rightmostGallery .item22 table tr,.rightmostGallery .item22 table td{
+   margin: 0;
+   padding: 0; 
+}
+.rightmostGallery .item23 table.info{
+    padding:5px;
+    display: inline-block;
+    font-size: 11px;
+    position: absolute;
+    top: 10px;
+}
+
+
+.rightmostGallery .Item table.info img{
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    
+}
+.rightmostGallery .Item .info b{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 12px;
+}
+.rightmostGallery .item21 b.duration{
+    font-size: 12px;
+    background: rgb(243, 120, 19);
+    border-radius: 10px;
+    position: absolute;
+    padding: 7px;
+    top: 30px;
+    right: 30px;
+}
+.rightmostGallery .item22 b.duration,.rightmostGallery .item23 b.duration{
+    font-size: 12px;
+    background: rgb(243, 120, 19);
+    border-radius: 10px;
+   margin: 7px;
+    padding: 7px;
+    
+}
+.rightmostGallery .item22 b.duration{
+    margin-top: -20px;
+    display: inline-block;
+}
+.rightmostGallery .item21 .detail{
+    width: 86%;
+    background-color: blueviolet;
+    padding: 6px;
+}
+.rightmostGallery .item22 .detail{
+    width: 76%;
+    background-color: rgb(231, 59, 165);
+    padding: 1px;
+    margin-top: 20px;
+}
+.rightmostGallery .item23 .detail{
+    width: 69%;
+    background: rgb(236, 125, 34);
+    padding: 2px;
+    margin-top: 20px;
+}
+
+
+.rightmostGallery .Item .detail{
+    
+    
+    font-size: 11px;
+    border-radius: 10px;
+    margin: 8px;
+    
+    position: absolute;
+    bottom: 10px;
+}
+.rightmostGallery .Item .detail p{
+    margin: 0;
+    padding: 0;
+}
+/*rightmost gallery ends*/
+
+
+
+
+
+
+
+
+
+.adw{
+    padding: 10px
+}
+
+
+form input{
+    border: none;
+    outline: none;
+    background:rgb(231, 239, 243) ;
+    padding: 7px 35px;
+    border-radius: 10px;
+}
+form input::placeholder{
+    color: rgb(186, 191, 194);
+}
+form button{
+    
+    border: none;
+    margin-left: 10px;
+    outline: none;
+    background:rgb(248, 143, 6) ;
+    padding: 7px 20px;
+    border-radius: 10px;
+    
+}
+
+
+.specialOffer{
+    background: rgba(162, 247, 250, 0.493);
+    border-radius: 20px;
+    padding: 20px;
+
+    height: 170px;
+}
+
+.specialoffferContainer{
+    
+    margin-top: 54px;
+}
+.specialOffer{width: 100%;}
+.specialOffer::before{content: '';}
+.specialOffer .left{width: 70%;float: left;}
+.specialOffer .right{width: 30%;float: right;}
+.specialOffer .right img{
+    height: 80%;
+    width: 100%;
+}
+.bottomnav .left p,.bottomnav .right p{
+    padding: 0;
+    margin: 0;
+}
+.bottomnav .left,.bottomnav .right{
+  padding: 10px;
+  background: rgb(231, 239, 243);
+  height: 130px;
+  border-radius: 20px;
+
+}
+.bottomnav .bottom{
+    margin: auto;
+    width: 90%;
+    background: rgb(231, 239, 243);
+ margin-top: 20px;
+  border-radius: 20px;
+  
+  padding: 20px;
+}
+@media screen and (min-width:900px) {
+    .bottomnav .left{margin-right: -10px;}
+.bottomnav .right{margin-left: -10px;}
+}
+@media screen and (max-width:700px) {
+    .bottomnav .left,.bottomnav .right{
+        margin-top: 10px;
+    }
+    .lefttopBrand{
+        text-align: center;
+        
+    }
+    form button{
+        display: block;
+    }
+}
+
+.leftwrapper{
+    margin-top: 90px;
+}
+
+.specialOffer .left h3{
+    color: rgb(245, 137, 37);
+}
+.specialOffer .left p{
+    padding: 0;
+    margin: 0;
+    color:#13fcfc
+}
+.specialOffer .left a{
+    color: rgb(245, 137, 37);
+    padding: 7px;
+    display: inline-block;
+    border-radius: 10px;
+    background: #fff;
+    margin-top: 20px;
+    text-decoration: none;
+}
+

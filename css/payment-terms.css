@@ -1,3 +1,15 @@
 .details{padding: 10px;margin: 10px auto;}
 h1{font-family:  'Vidaloka', serif;}
 a.gpay:hover{text-decoration: none;}
+h1{
+    transform: translateY(-250px);
+   color: aliceblue;
+    
+    
+}
+@media screen and (max-width:700px){
+    h1{
+        transform: translateY(-140px);
+       
+    }
+}

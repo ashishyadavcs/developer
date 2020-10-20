@@ -1,23 +1,29 @@
 .bannercontent{
-    padding: 60px 40px;
+    padding: 40px 40px;
     background: #000000;
     border-radius: 0 0 170px 0;
     
 }
+.mainh{font-family: 'Playball',sans-serif}
 .outbanner{/*background:linear-gradient(-135deg,rgb(129, 142, 234),rgb(184, 75, 222));*/
 background: linear-gradient(135deg,yellow,rgb(230, 13, 13));
 padding-bottom:10%;
 border-radius: 0 0 0 170px 0;}
 @media screen and (max-width:600px){
     .outbanner{padding-bottom:12%}
-    
+    .bannercontent h1{
+        font-weight: 500;
+        
+    }
 }
 .bannercontent h1{font-weight: 600;
+
     font-family: roboto,sans-serif;
     color: #f1f1f1;
     font-size: 35px
 }
 .bannercontent p{font-size: 2rem;font-weight: 700;color:#f1f1f1}
+.bannercontent img{border-radius: 50%;max-height: 320px;align-self: center;}
 .bannercontent .bannerbtn{
     padding: 20px 30px;
     background: rgb(248, 7, 128);
@@ -27,6 +33,71 @@ border-radius: 0 0 0 170px 0;}
     display: inline-block;
     text-decoration: none;
 }
+
+
+.heroContent{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    vertical-align: middle;
+
+ 
+
+}
+.heroContent .left h1{
+    color: #ecf1f1;
+   border-bottom: 2px solid aqua;
+   padding-bottom: 20px;
+    
+
+}
+.heroContent .left .contactme{
+    background: transparent;
+    color:  rgb(252, 44, 189);
+    border: 3px solid;
+    padding: 15px 25px;
+    font-size: 17px;
+    text-decoration: none;
+    border-radius: 10px;
+    animation: zoom 1s linear infinite alternate;
+    margin-top: 60px;
+    display: inline-block;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1.1);
+       
+    }
+    100%{
+        transform: scale(1);
+       
+
+    }
+}
+.heroContent .left .contactme:hover{
+    color:  rgba(236, 42, 133, 0.938);
+    transition: 1s;
+    padding-right: 40px;
+}
+@media screen and (max-width:700px){
+    .heroContent .left .contactme{
+        margin-bottom: 70px;
+    }
+    .bannercontent img{display: none;}
+}
+.heroContent .left h1 span.name{color: rgb(252, 44, 189);}
+
+
+
+
+
+
+
+
+
+
 .services{background: transparent;margin: 0;padding: 50px 20px;}
 .service{
     height: 270px;

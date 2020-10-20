@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>animation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <style>
+        *{margin: 0;box-sizing: border-box;-webkit-box-sizing:border-box;}
+        body{
+            font: 14px/1.3 , havetica neu,'sans-serif';
+        transition: 2s 0.5s ease;}
+        body{animation: changebg 2s linear infinite}
+        @keyframes changebg{
+            0%{background: hsl(0,60%,70%)}
+            15%{background: hsl(60,60%,70%)}
+            30%{background: hsl(120,60%,70%)}
+            45%{background: hsl(180,60%,70%)}
+            60%{background: hsl(240,60%,70%)}
+            75%{background: hsl(300,60%,70%)}
+            100%{background: hsl(360,60%,70%)}
+            
+        }
+        #img1{margin: 100px;;border-radius: 50%;height: 100p;width: 100px;transition: 3s linear infinite;animation: moves 0.2s linear infinite alternate;position: relative}
+        @keyframes moves{
+            0%{transform: rotate(0deg);left: 0px}
+            0%{transform: scale(1)}
+            100%{transform: rotate(360deg);left:314px}
+            100%{transform: scale(3)}  
+            
+          
+        }
+        #img2{float: right;margin: 100px;;border-radius: 50%;height: 100p;width: 100px;transition: 3s linear infinite;animation: moves 0.2s linear infinite alternate;position: relative}
+        @keyframes moves{
+            0%{transform: rotate(0deg);left: 0px}
+            0%{transform: scale(1)}
+            100%{transform: rotate(360deg);right:314px}
+             
+            100%{transform: scale(3)}  
+            
+          
+        }
+         #img3{margin: 100px;;border-radius: 50%;height: 100p;width: 100px;transition: 3s linear infinite;animation: moves 0.2s linear infinite alternate;position: relative}
+        @keyframes moves{
+            0%{transform: rotate(0deg);left:8px}
+            0%{transform: scale(1)}
+            100%{transform: rotate(360deg);right:314px}
+             
+            100%{transform: scale(3)}  
+            
+          
+        }
+        #car{position: relative;
+            animation: rotatecar 3s linear infinite alternate;
+        }
+        @keyframes rotatecar{
+            0%{transform:rotateX(230deg);transform-origin:top,left}
+            50%{transform: translate(-600px)}
+            90%{transform: translate(600px)}
+            
+          
+        }
+        .red{position: relative;height: 200px;width: 200px;background: red;
+        transition: 2s linear;animation: rotateit 2s linear in}
+        
+        
+    </style>
+</head>
+<body>
+
+
+<img id="img1" src="https://images.unsplash.com/photo-1532974297617-c0f05fe48bff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+<img id="img2" src="">
+<img id="img3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuzAtG_GoCmyRldHn9MUd6mhAFq-J85Er-LjK6_Qhh17f2P21c">
+<img id="car" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuzAtG_GoCmyRldHn9MUd6mhAFq-J85Er-LjK6_Qhh17f2P21c">
+</body>
+</html>
