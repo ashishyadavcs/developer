@@ -1,0 +1,271 @@
+<!--
+
+As per the clarification by Aparajita Mam , I have written the code only for
+ the Drink section
+
+I have used the same image for all items.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Terasol Task </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fontawesome cdn for icon-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!--jquery-->
+    <script src="./js/jquery-1.3.2.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <a class="logo" href=""><img src="./images/logo.png" alt="logo" /></a>
+            <ul class="asideLinks">
+                <li><i class="fa fa-calendar-o"></i></li>
+                <li><i class="fa fa-cutlery"></i></li>
+                <li><i class="fa fa-address-book"></i></li>
+            </ul>
+            <button class="setting"><i class="fa fa-cog"></i></button>
+        </aside>
+        <main>
+            <!-- for success message on adding item to the cart-->
+            <div id="addToCartAlert"></div>
+            <header>
+
+                <div class="headerContent">
+                    <h1>The Great Table</h1>
+                    <div>Today <span><i class="fa fa-angle-down"></i></span></div>
+                </div>
+
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                </div>
+
+            </header>
+
+
+            <!--split button -->
+            <div class="split">
+                <b>Split Check</b>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <!--split button ends-->
+
+
+            <section class="products-container">
+                <div class="items">
+                    <div class="tabNavigation">
+                        <h2>Table 5 - Mrs. Einstein</h2>
+                        <!--tab navigation for diffrent order types-->
+                        <div class="tabNavbar">
+                            <ul class="tab-ul">
+                                <li class="activeTabNav">Drink</li>
+                                <li>Food</li>
+                                <li>Dessert</li>
+                            </ul>
+                        </div>
+                        <!-- order category dropdown -->
+                        <select class="category">
+                            <option value="">wine</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+
+
+
+
+                    </div>
+                    <div class="tabs">
+                        <!--item start-->
+                        <div class="item" id="1">
+                            <div class="item-image">
+                                <img src="./images/bottal.png" alt="drink-name">
+                            </div>
+
+                            <div class="item-details">
+
+                                <div class="name">Beaux Freses</div>
+                                <div>$<span class="price">7.50</span></div>
+
+                                <div class="selector">
+                                    <div class="select minus">-</div>
+                                    <div class="select zero">0</div>
+                                    <div class="select plus">+</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!--item ends-->
+
+
+
+                        <!--item start-->
+                        <div class="item" id="2">
+                            <div class="item-image">
+                                <img src="./images/bottal.png" alt="drink-name">
+                            </div>
+
+                            <div class="item-details">
+
+                                <div class="name">Chateau Climens</div>
+                                <div>$<span class="price">3.00</span></div>
+
+                                <div class="selector">
+                                    <div class="select minus">-</div>
+                                    <div class="select zero">0</div>
+                                    <div class="select plus">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item ends-->
+
+                        <!--item start-->
+                        <div class="item" id="3">
+                            <div class="item-image">
+                                <img src="./images/bottal.png" alt="drink-name">
+                            </div>
+
+                            <div class="item-details">
+
+                                <div class="name">Cabernet</div>
+                                <div>$<span class="price">9.25</span></div>
+
+                                <div class="selector">
+                                    <div class="select minus">-</div>
+                                    <div class="select zero">0</div>
+                                    <div class="select plus">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item ends-->
+
+                        <!--item start-->
+                        <div class="item" id="4">
+                            <div class="item-image">
+                                <img src="./images/bottal.png" alt="drink-name">
+                            </div>
+
+                            <div class="item-details">
+
+                                <div class="name">Domaine Serene</div>
+                                <div>$<span class="price">6.00</span></div>
+
+                                <div class="selector">
+                                    <div class="select minus">-</div>
+                                    <div class="select zero">0</div>
+                                    <div class="select plus">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item ends-->
+
+                        <!--item start-->
+                        <div class="item" id="5">
+                            <div class="item-image">
+                                <img src="./images/bottal.png" alt="drink-name">
+                            </div>
+
+                            <div class="item-details">
+
+                                <div class="name">Lewis Alecs</div>
+                                <div>$<span class="price">4.00</span></div>
+
+                                <div class="selector">
+                                    <div class="select minus">-</div>
+                                    <div class="select zero">0</div>
+                                    <div class="select plus">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item ends-->
+
+                        <!--item start-->
+                        <div class="item" id="6">
+                            <div class="item-image">
+                                <img src="./images/bottal.png" alt="drink-name">
+                            </div>
+
+                            <div class="item-details">
+
+                                <div class="name">Federalist</div>
+                                <div>$<span class="price">8.30</span></div>
+
+                                <div class="selector">
+                                    <div class="select minus">-</div>
+                                    <div class="select zero">0</div>
+                                    <div class="select plus">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item ends-->
+
+                    </div>
+
+                </div>
+
+
+                <!--checkout -->
+                <div class="checkout">
+                    <h2>Check</h2>
+
+                    <!--selected item table start-->
+                    <table id="products" class="table">
+                        <thead>
+                            <tr>
+                                <th>Drinks</th>
+                                <th>&nbsp;</th>
+                                <th>$<span id="categoryTotal">0.00</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+
+                    </table>
+                    <!--seleted items table ends -->
+
+                    <!--total table-->
+                    <table class="table total" style="margin-top: 60px;">
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>&nbsp;</td>
+                            <td>$<span id="subtotal">0.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>Estimeted Taxes</td>
+                            <td>&nbsp;</td>
+                            <td>$<span id="taxes">0.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>Discount</td>
+                            <td>&nbsp;</td>
+                            <td>$<span id="discount">0.00</span></td>
+                        </tr>
+                    </table>
+                    <!--total table ends-->
+                    <button class="pay">PAY&nbsp;$<span id="payAmount">0.00</span></button>
+
+                </div>
+
+                <!--checkout ends-->
+            </section>
+        </main>
+
+    </div>
+
+    <script src="./js/functionality.js"></script>
+</body>
+
+</html>

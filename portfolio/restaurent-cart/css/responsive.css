@@ -1,0 +1,333 @@
+@media screen and (max-width:300px){
+    aside{
+        padding: 0;
+    }
+    aside .logo {
+        position: absolute;
+        top: 20px;
+        left: -3px;
+    }
+    aside .logo img {
+        height: 20px;
+    }
+    aside .setting {
+        cursor: pointer;
+        position: absolute;
+        bottom: 20px;
+        left: 1px;
+        display: inline-block;
+        padding: 0 10px;
+    
+    }
+    section.products-container .checkout table{
+        font-size: 22px;
+        width: auto;
+    }  
+    h1{font-size: 22px;}
+    h2{font-size: 18px;}
+    .split{display: none}
+
+    ul.asideLinks li {
+        cursor: pointer;
+        display: inline-block;
+        margin-bottom: 20px;
+    
+    }
+    .container{
+        width:100%;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .products-container .items h2{
+        font-size: 14px;
+    }
+    .container aside{width: 14%;float: left;}
+    .container main{width: 86%;float: right;}
+    
+    .products-container{
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        
+    }
+
+    section.products-container .items {
+        width: 100%;
+        float: none
+    }
+    
+    section.products-container .checkout {
+        text-align: center;
+        padding: 10px;
+        float: left;
+        overflow-x: hidden;
+    }
+
+    .checkout h2 {
+        margin-left: 0px;
+        padding-bottom: 15px;
+    }
+    
+    .checkout th, td {
+        
+        padding: 2px 7px;
+        text-align: left;
+        
+      }
+
+    aside .logo {
+        position: absolute;
+        top: 20px;
+        left: 1px;
+    }
+    main .split{display: none;}
+
+    .tabs {
+        display: flex;
+        -webkit-box-orient:horizontal;
+        -webkit-box-direction:normal;
+            -ms-flex-direction:row;
+                flex-direction:row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack:distribute;
+            justify-content:space-evenly;
+    }
+
+    .tabs .item {
+        
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        font-size: 17px;
+        padding: 10px;
+        width: 190px;
+        margin: 10px 0;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        cursor: pointer;
+        
+    }
+    .tabs .item:active{
+        background: transparent;
+        outline: none;
+    }
+
+    section.products-container .checkout{width: 100%}
+    section.products-container .checkout table{
+        
+        font-size: 17px;
+        padding: 10px;
+        width: 90%; margin-bottom: 0; display: table; 
+        margin: auto;
+        overflow-x: hidden;
+    }
+
+/* tab item*/
+
+
+.tabs .item .item-image {
+    padding: 10px 15px;
+
+}
+
+/*header */
+header{
+    padding: 10px;
+}
+header .headerContent {
+    -webkit-box-flex: 80%;
+        -ms-flex: 80%;
+            flex: 80%;
+    text-align: center;
+}
+header .headerContent i{cursor: pointer;}
+
+header .search {
+    -webkit-box-flex: 20%;
+        -ms-flex: 20%;
+            flex: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+#addToCartAlert{
+   top:0;
+    left: 0%;
+    width: 100%;
+   
+}
+
+
+
+/*toggle button responsive size*/
+.switch {
+   
+    width: 40px;
+    height: 24px;
+}
+.slider:before {
+    
+    height: 16px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+   
+}
+input:checked+.slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+}
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container aside{width: 10%;float: left;}
+    .container main{width: 90%;float: right;}
+    section.products-container .items {
+        width: 100%;
+        float: none
+    }
+    
+    section.products-container .checkout {
+        width: 100%;
+        text-align: center;
+        padding: 18px;
+        float: left;
+        overflow-x: hidden;
+    }
+    section.products-container .checkout table{
+        
+        font-size: 20px;
+        padding: 10px;
+        width: 90%; margin-bottom: 0; display: table; 
+        margin: auto;
+        overflow-x: hidden;
+        margin-right: 10px;
+    }
+    .tabs {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+    
+
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container aside{width: 8%;float: left;}
+    .container main{width: 92%;float: right;}
+    section.products-container .items h2{font-size: 20px;}
+    section.products-container .items {
+        width: 100%;
+        float: none;
+        
+    }
+    section.products-container .checkout h2{font-size: 20px;}
+    
+    section.products-container .checkout {
+        width: 100%;
+        
+        float: none;
+    }
+    section.products-container .checkout table{
+        
+        font-size: 17px;
+        padding: 6px;
+        /* box-shadow: 0 0 2px 1px #ddd;
+        -webkit-box-shadow: 0 0 2px 1px #ddd;
+        -moz-box-shadow: 0 0 2px 1px #ddd;
+        -o-box-shadow: 0 0 2px 1px #ddd; */
+        width: 90%; margin-bottom: 0; display: table; 
+        margin: auto;
+        overflow-x: hidden;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container aside{width: 5%;float: left;}
+    .container main{width: 95%;float: right;}
+    section.products-container .items {
+        width: 66%;
+        float: left;
+        
+    }
+    section.products-container .items .tabs{
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+    
+    section.products-container .checkout {
+        width: 34%;
+        float: left;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container aside{width: 5%;float: left;}
+    .container main{width: 95%;float: right;}
+section.products-container .checkout table{
+    font-size: 18px;
+}
+section.products-container .items {
+    width: 70%;
+    float: left;
+    
+}
+
+section.products-container .checkout {
+    width: 30%;
+   
+    float: left;
+}
+section.products-container .checkout h2{
+    text-align: left;
+}
+h1{font-size: 30px;}
+
+
+}
+
+/* javascript styling*/
+.toogleWidth{
+    width: 100%!important;
+    float: none;
+    -webkit-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+
+}
+
+
+
+
