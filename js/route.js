@@ -46,7 +46,5 @@ $routeProvider
     templateUrl: 'website-designer-in-delhi.html',
     
    })
-.otherwise({
- redirectTo: '/'
-}); 
+ 
 }]); 
