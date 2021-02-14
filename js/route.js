@@ -6,6 +6,8 @@ $routeProvider
  templateUrl: 'home.html',
  
 })
+ 
+ 
 .when('/services', {
     templateUrl: 'services.html',
    
@@ -13,6 +15,9 @@ $routeProvider
    .when('/portfolio', {
     templateUrl: 'portfolio.html',
     
+   })
+  .when('/ top300-most-important-javascript-interview-questions', {
+    templateUrl: ' top300-most-important-javascript-interview-questions.html',
    })
     .when('/techskills', {
     templateUrl: 'techskills.html',
