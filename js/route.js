@@ -16,8 +16,8 @@ $routeProvider
     templateUrl: 'portfolio.html',
     
    })
-  .when('/ top300-most-important-javascript-interview-questions', {
-    templateUrl: ' top300-most-important-javascript-interview-questions.html',
+  .when('/top300-most-important-javascript-interview-questions', {
+    templateUrl: 'top300-most-important-javascript-interview-questions',
    })
     .when('/techskills', {
     templateUrl: 'techskills.html',
