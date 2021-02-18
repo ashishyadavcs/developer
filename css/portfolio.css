@@ -17,7 +17,7 @@ h1{font-family:  'Vidaloka', serif;}
 .card{ height: 450px;width: 30%;
 margin-bottom: 20px; cursor: pointer;}
 .card:hover{
-    box-shadow: 0 0 3px 5px rgb(142, 162, 228);
+    
     transform: scale(1.02);
     transition: 0.7s;
 }
