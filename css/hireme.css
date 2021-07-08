@@ -12,6 +12,7 @@
         transform: translateY(-140px);
        
     }
+    h1{font-size: 28px!important}
 }
 
 .pagebanner{background:url('./images/ashish.jpg');}
