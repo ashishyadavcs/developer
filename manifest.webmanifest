@@ -1,10 +1,12 @@
 {
     "name":"Developer Ashish",
     "short_name":"Ashishtech",
-    "start_url":".",
+    "start_url":"./index.html",
     "background_color":"#6dcdb1",
     "theme_color":"#000",
+    "display_override": ["minimal-ui"],
     "display":"standalone",
+
     "icons":[
         {
             "src":"images/logo192.png",
