@@ -1,10 +1,10 @@
 {
     "name": "Developer Ashish",
-    "short_name": "Ashishtech",
+    "short_name": "Ashish Kumar",
     "start_url": "./index.html",
     "background_color": "#6dcdb1",
     "theme_color": "#000",
-    "display": "fullscreen",
+    "display": "standalone",
     "icons": [
         {
             "src": "images/logo192.png",
