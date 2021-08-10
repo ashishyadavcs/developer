@@ -4,9 +4,6 @@
     "start_url": "./index.html",
     "background_color": "#6dcdb1",
     "theme_color": "#000",
-    "display_override": [
-        "minimal-ui"
-    ],
     "display": "standalone",
     "icons": [
         {
