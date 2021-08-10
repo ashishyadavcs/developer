@@ -1,7 +1,7 @@
 {
     "name":"Developer Ashish",
     "short_name":"Ashishtech",
-    "start_url":".",
+    "start_url":"/developer",
     "background_color":"#6dcdb1",
     "theme_color":"#000",
     "display":"standalone",
