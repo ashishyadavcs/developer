@@ -40,6 +40,7 @@
     img {
       object-fit: cover;
     }
+
   </style>
   <script type="application/ld+json">
   {
@@ -106,6 +107,7 @@
     }
     </script>
 
+
 </head>
 <!--head end-->
 
@@ -159,9 +161,10 @@
           <a href="#"><span class="white-text email">ashishbhu221306@gmail.com</span></a>
         </div>
       </li>
+      <li class="add-button"><a href="" onclick="event.preventDefault()"><i class='material-icons'>get_app</i>Install App</a></li>
       <li><a href="./"><i class='material-icons'>home</i>Home</a></li>
       <li><a href="#!aboutme"><i class='material-icons'>perm_identity</i>About Me</a></li>
-      <li><a href="./portfolio/ashishcv.pdf"><i class='material-icons'>get_app</i>Resume</a></li>
+      <li><a href="./portfolio/ashishcv.pdf"><i class='material-icons'>description</i>Resume</a></li>
       <li><a href="#!portfolio"><i class='material-icons'>work</i>Portfolio</a></li>
       <li><a href="https://ashish221306.github.io" target="_BLANK"><i class='material-icons'>rss_feed</i>Blog</a></li>
       <!--
@@ -169,7 +172,7 @@
             <li><a href="#!payment-terms"><i class='material-icons'>credit_card</i>Payment Terms</a></li>
            -->
       <li><a href="#!contact-us"><i class='material-icons'>settings_cell</i>Contact Us</a></li>
-      <li><a href="#!hireme"><i class='material-icons'>assignment-in</i>Hire Me</a></li>
+      <li><a href="#!hireme"><i class='material-icons'>folder_shared</i>Hire Me</a></li>
 
 
 
@@ -203,6 +206,7 @@
     <a target="_blank" class="sbutton mainsbutton" tooltip="Connect With Us"><i class="fa fa-comment"></i></a>
 
   </div>
+  
   <!--sbuton end-->
   <script>
     $(document).ready(function () {
@@ -225,6 +229,33 @@
 
       deferredPrompt = e;
     })
+    const addBtn = document.querySelector('.add-button');
+
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent Chrome 67 and earlier from automatically showing the prompt
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+  // Update UI to notify the user they can add to home screen
+  addBtn.style.display = 'block';
+
+  addBtn.addEventListener('click', (e) => {
+    // hide our user interface that shows our A2HS button
+    addBtn.style.display = 'none';
+    // Show the prompt
+    deferredPrompt.prompt();
+    // Wait for the user to respond to the prompt
+    deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('User accepted the A2HS prompt');
+        } else {
+          console.log('User dismissed the A2HS prompt');
+        }
+        deferredPrompt = null;
+      });
+  });
+});
   </script>
 
   <script src="./js/route.js"></script>

@@ -47,7 +47,7 @@ border-radius: 0 0 0 170px 0;}
 }
 .heroContent .left h1{
     color: #ecf1f1;
-   border-bottom: 2px solid aqua;
+   border-bottom: 2px solid rgb(252, 44, 189);
    padding-bottom: 20px;
     
 
@@ -63,6 +63,7 @@ border-radius: 0 0 0 170px 0;}
     animation: zoom 1s linear infinite alternate;
     margin-top: 60px;
     display: inline-block;
+    transition: 0.9s;
 }
 
 @keyframes zoom{
